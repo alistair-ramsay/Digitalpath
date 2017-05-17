@@ -1,0 +1,1469 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, main.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 27, main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 32, main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 41, main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 61, main.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 69, main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 79, main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 87, main.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Icomoon
+   ========================================================================== */
+@font-face {
+  font-family: 'DPV3';
+  src: url("fonts/DPV3.eot?crdhmn");
+  src: url("fonts/DPV3.eot?#iefixcrdhmn") format("embedded-opentype"), url("fonts/DPV3.woff?crdhmn") format("woff"), url("fonts/DPV3.ttf?crdhmn") format("truetype"), url("fonts/DPV3.svg?crdhmn#DPV3") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 109, main.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'DPV3';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 123, main.scss */
+.icon-logo:before {
+  content: "\e600";
+}
+
+/* line 127, main.scss */
+.icon-info:before {
+  content: "\e601";
+}
+
+/* line 131, main.scss */
+.icon-menu:before {
+  content: "\e602";
+}
+
+/* line 135, main.scss */
+.icon-close:before {
+  content: "\ea0f";
+}
+
+/* line 139, main.scss */
+.icon-twitter:before {
+  content: "\ea91";
+}
+
+/* line 143, main.scss */
+.icon-feed:before {
+  content: "\ea94";
+}
+
+/* line 147, main.scss */
+.icon-flickr:before {
+  content: "\eaa0";
+}
+
+/* ==========================================================================
+   AR's custom styles
+   ========================================================================== */
+/* line 164, main.scss */
+.desktop-hide {
+  display: none;
+}
+
+/* line 168, main.scss */
+.mobile-hide {
+  display: block;
+}
+
+/* line 172, main.scss */
+#image {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: no-repeat center center;
+  background-size: cover !important;
+  -webkit-transition: background .4s linear;
+  -moz-transition: background .4s linear;
+  -o-transition: background .4s linear;
+  transition: background .4s linear;
+}
+
+/* line 187, main.scss */
+.info {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #009add;
+  cursor: pointer;
+  margin-left: -25px;
+  left: 50%;
+}
+
+/* line 198, main.scss */
+.info:hover {
+  background: #272725;
+  -webkit-transition: background .4s linear;
+  -moz-transition: background .4s linear;
+  -o-transition: background .4s linear;
+  transition: background .4s linear;
+}
+
+/* line 206, main.scss */
+.icon-info {
+  font-size: 20px;
+  color: white;
+  margin: 14px 0 0 15px;
+}
+
+/* line 212, main.scss */
+.icon-close-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 49px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* line 222, main.scss */
+.light .icon-close {
+  font-size: 10px;
+  color: #272725;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -4px;
+}
+
+/* line 231, main.scss */
+.dark .icon-close {
+  font-size: 10px;
+  color: #e0e1e2;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -4px;
+}
+
+/* line 240, main.scss */
+.info-overlay-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: none;
+}
+
+/* line 248, main.scss */
+#mugshot {
+  background: url(../img/mugshot-sm.png) no-repeat;
+  width: 100%;
+  height: 70px;
+  margin-top: 60px;
+  margin-left: 70px;
+}
+
+/* line 256, main.scss */
+.contact-overlay-wrapper .contact-overlay-left h2 {
+  margin: 50px 0 1em;
+  text-align: left;
+  padding-left: 70px;
+}
+
+/* line 262, main.scss */
+.contact-overlay-wrapper .contact-overlay-left p {
+  text-align: left;
+  padding: 0 70px;
+}
+
+/* line 267, main.scss */
+.contact-overlay-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: none;
+}
+
+/* line 275, main.scss */
+.contact-overlay-wrapper-2 {
+  margin-left: -400px;
+  margin-top: -300px;
+  width: 803px;
+  height: 600px;
+}
+
+/* line 282, main.scss */
+.light .contact-overlay-left {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 400px;
+  height: 600px;
+  background: white;
+  overflow: hidden;
+  border: 1px solid #272725;
+  border-radius: 5px 0px 0px 5px;
+}
+/* line 293, main.scss */
+.light .contact-overlay-left p, .light .contact-overlay-left h2 {
+  color: #272725;
+}
+/* line 297, main.scss */
+.light .contact-overlay-left a {
+  color: #009add;
+}
+/* line 301, main.scss */
+.light .contact-overlay-left .icon-twitter {
+  font-size: 200%;
+  float: left;
+  margin: 50px 0 0 70px;
+}
+/* line 307, main.scss */
+.light .contact-overlay-left .info-panel-padding {
+  text-align: center;
+}
+
+/* line 312, main.scss */
+.light .contact-overlay-right {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 400px;
+  height: 600px;
+  background: white;
+  overflow: hidden;
+  border-left: 0px;
+  border-top: 1px solid #272725;
+  border-right: 1px solid #272725;
+  border-bottom: 1px solid #272725;
+  border-radius: 0px 5px 5px 0px;
+}
+/* line 326, main.scss */
+.light .contact-overlay-right p, .light .contact-overlay-right h2 {
+  color: #272725;
+}
+/* line 330, main.scss */
+.light .contact-overlay-right a {
+  color: #009add;
+}
+
+/* line 336, main.scss */
+.dark .contact-overlay-left {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 400px;
+  height: 600px;
+  background: #272725;
+  overflow: hidden;
+  border: 1px solid #e0e1e2;
+  border-radius: 5px 0px 0px 5px;
+}
+/* line 347, main.scss */
+.dark .contact-overlay-left p, .dark .contact-overlay-left h2 {
+  color: #e0e1e2;
+}
+/* line 351, main.scss */
+.dark .contact-overlay-left a {
+  color: #009add;
+}
+/* line 355, main.scss */
+.dark .contact-overlay-left .icon-twitter {
+  font-size: 200%;
+  float: left;
+  margin: 50px 0 0 70px;
+}
+/* line 361, main.scss */
+.dark .contact-overlay-left .info-panel-padding {
+  text-align: center;
+}
+
+/* line 366, main.scss */
+.dark .contact-overlay-right {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 400px;
+  height: 600px;
+  background: #272725;
+  overflow: hidden;
+  border-left: 0px;
+  border-top: 1px solid #e0e1e2;
+  border-right: 1px solid #e0e1e2;
+  border-bottom: 1px solid #e0e1e2;
+  border-radius: 0px 5px 5px 0px;
+}
+/* line 380, main.scss */
+.dark .contact-overlay-right p, .dark .contact-overlay-right h2 {
+  color: #e0e1e2;
+}
+/* line 384, main.scss */
+.dark .contact-overlay-right a {
+  color: #009add;
+}
+
+/* line 390, main.scss */
+.dark .contact-overlay {
+  float: left;
+  margin-left: 0;
+  margin-top: 0;
+  width: 400px;
+  height: 600px;
+  background: #272725;
+  overflow: hidden;
+  border: 1px solid #e0e1e2;
+  border-radius: 5px;
+}
+/* line 401, main.scss */
+.dark .contact-overlay p, .dark .contact-overlay h2 {
+  color: #e0e1e2;
+}
+/* line 405, main.scss */
+.dark .contact-overlay a {
+  color: #009add;
+}
+
+/* line 411, main.scss */
+.light .info-overlay {
+  margin-left: -200px;
+  margin-top: -200px;
+  width: 400px;
+  height: 400px;
+  background: white;
+  overflow: hidden;
+  border: 1px solid #272725;
+  border-radius: 5px;
+}
+/* line 421, main.scss */
+.light .info-overlay p, .light .info-overlay h2 {
+  color: #272725;
+}
+/* line 425, main.scss */
+.light .info-overlay a {
+  color: #009add;
+}
+
+/* line 430, main.scss */
+.dark .info-overlay {
+  margin-left: -200px;
+  margin-top: -200px;
+  width: 400px;
+  height: 400px;
+  background: #272725;
+  overflow: hidden;
+  border: 1px solid #e0e1e2;
+  border-radius: 5px;
+}
+/* line 440, main.scss */
+.dark .info-overlay p, .dark .info-overlay h2 {
+  color: #e0e1e2;
+}
+/* line 444, main.scss */
+.dark .info-overlay a {
+  color: #009add;
+}
+
+/* line 449, main.scss */
+.info-panel-padding {
+  padding: 20px;
+}
+
+/* line 453, main.scss */
+.info-panel-padding-lowercase {
+  padding: 20px;
+}
+
+/* line 457, main.scss */
+.light .info-title {
+  background: #ebf7fc;
+  position: relative;
+  padding-right: 50px;
+}
+
+/* line 463, main.scss */
+.dark .info-title {
+  background: #0b3e52;
+  position: relative;
+  padding-right: 50px;
+}
+
+/* line 469, main.scss */
+.light .info-panel-left {
+  width: 90px;
+  height: 59px;
+  float: left;
+  border-top: 1px solid #272725;
+  background: white;
+}
+
+/* line 477, main.scss */
+.light .info-panel-right {
+  width: 309px;
+  height: 59px;
+  float: left;
+  border-left: 1px solid #272725;
+  border-top: 1px solid #272725;
+  background: white;
+}
+
+/* line 486, main.scss */
+.dark .info-panel-left {
+  width: 90px;
+  height: 59px;
+  float: left;
+  border-top: 1px solid #e0e1e2;
+  background: #272725;
+}
+
+/* line 494, main.scss */
+.dark .info-panel-right {
+  width: 309px;
+  height: 59px;
+  float: left;
+  border-left: 1px solid #e0e1e2;
+  border-top: 1px solid #e0e1e2;
+  background: #272725;
+}
+
+/* line 503, main.scss */
+.dark .info-panel-submit {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #e0e1e2;
+  background: #272725;
+}
+
+/* line 510, main.scss */
+.light .info-panel-submit {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #272725;
+  background: white;
+}
+
+/* line 517, main.scss */
+.float-right {
+  float: right;
+}
+
+/* line 521, main.scss */
+.contact-overlay-wrapper .info-panel-left {
+  width: 130px;
+}
+
+/* line 525, main.scss */
+.contact-overlay-wrapper .info-panel-right {
+  width: 269px;
+}
+
+/* line 529, main.scss */
+.contact-overlay-wrapper .info-panel-right.textarea {
+  height: auto;
+}
+
+/* line 533, main.scss */
+input, textarea {
+  width: 100%;
+  font-size: 120%;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  resize: none;
+}
+
+/* line 542, main.scss */
+.dark input, .dark textarea {
+  padding: 0;
+  color: #e0e1e2;
+  background: #272725;
+}
+
+/* line 548, main.scss */
+.contact-overlay-right h2.button {
+  border: 0;
+  color: #009add;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* line 556, main.scss */
+.contact-overlay-right h2.button:hover {
+  color: #eb0c6a;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+}
+
+/* line 564, main.scss */
+.light .contact-overlay-right.confirm-bg {
+  background: #ebf7fc;
+}
+
+/* line 568, main.scss */
+.dark .contact-overlay-right.confirm-bg {
+  background: #0b3e52;
+}
+
+/* line 572, main.scss */
+.info-panel-right.bottom {
+  height: 600px;
+}
+
+/* line 576, main.scss */
+.info-overlay p, .contact-overlay-left p, .contact-overlay-right p {
+  margin: 0px !important;
+}
+
+/* line 580, main.scss */
+.info-overlay p:nth-child(2), .info-overlay p:nth-child(3), .info-overlay p:nth-child(4), .info-overlay p:nth-child(5), .contact-overlay-left p:nth-child(2), .contact-overlay-left p:nth-child(3), .contact-overlay-left p:nth-child(4), .contact-overlay-left p:nth-child(5), .contact-overlay-right p:nth-child(2), .contact-overlay-right p:nth-child(3), .contact-overlay-right p:nth-child(4), .contact-overlay-right p:nth-child(5) {
+  margin: 1em 0 0 !important;
+}
+
+/* line 584, main.scss */
+html {
+  font-size: small;
+  height: 100%;
+}
+
+/* line 589, main.scss */
+.light body {
+  background: #e0e1e2 url(../img/loader.gif) no-repeat center center;
+  margin: 0;
+  padding: 3em;
+}
+
+/* line 596, main.scss */
+.dark body {
+  background: #272725 url(../img/loader-dark.gif) no-repeat center center;
+  margin: 0;
+  padding: 3em;
+}
+
+/* line 602, main.scss */
+.light.contact body {
+  background: #e0e1e2;
+  margin: 0;
+  padding: 3em;
+}
+
+/* line 608, main.scss */
+.dark.contact body {
+  background: #272725;
+  margin: 0;
+  padding: 3em;
+}
+
+/* line 614, main.scss */
+#chrome {
+  z-index: 1;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+}
+/* line 621, main.scss */
+#chrome #left-side {
+  margin: 3em 0 0 3em;
+}
+
+/* line 629, main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 633, main.scss */
+a.active {
+  color: #eb0c6a;
+}
+
+/* line 637, main.scss */
+.contact-overlay-right h2.error {
+  color: #eb0c6a;
+}
+
+/* line 641, main.scss */
+a.icon-twitter:hover {
+  color: #272725 !important;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+}
+
+/* line 649, main.scss */
+.dark a:hover, .light a:hover {
+  color: #009add;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+}
+
+/* line 657, main.scss */
+#get-in-touch {
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* line 662, main.scss */
+#get-in-touch:hover {
+  color: #009add;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+}
+
+/* line 670, main.scss */
+.light h1, .light h2 {
+  font-size: 110%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #272725;
+  margin: 0;
+  padding: 0;
+}
+/* line 678, main.scss */
+.light h1 a, .light h2 a {
+  color: #272725;
+}
+/* line 682, main.scss */
+.light h1 a.active, .light h2 a.active {
+  color: #eb0c6a;
+}
+/* line 686, main.scss */
+.light h1 a:hover, .light h2 a:hover {
+  color: #009add;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+}
+
+/* line 696, main.scss */
+.dark h1, .dark h2 {
+  font-size: 110%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e0e1e2;
+  margin: 0;
+  padding: 0;
+}
+/* line 704, main.scss */
+.dark h1 a, .dark h2 a {
+  color: #e0e1e2;
+}
+/* line 708, main.scss */
+.dark h1 a.active, .dark h2 a.active {
+  color: #eb0c6a;
+}
+/* line 712, main.scss */
+.dark h1 a:hover, .dark h2 a:hover {
+  color: #009add;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
+}
+
+/* line 722, main.scss */
+.light p {
+  font-size: 120%;
+  text-transform: none;
+  font-weight: 400;
+  color: #272725;
+  margin: 1em 0 0;
+}
+
+/* line 731, main.scss */
+.dark p {
+  font-size: 120%;
+  text-transform: none;
+  font-weight: 400;
+  color: #e0e1e2;
+  margin: 1em 0 0;
+}
+
+/* line 740, main.scss */
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 744, main.scss */
+ul li {
+  list-style-type: none;
+}
+
+/* line 749, main.scss */
+nav {
+  margin: 3em 0 0;
+  float: left;
+  clear: both;
+  display: inline;
+}
+
+/* line 756, main.scss */
+.light .large-logo {
+  font-size: 780%;
+  color: #272725;
+  margin-left: -0.05em;
+  margin-top: -0.15em;
+  float: left;
+  display: inline;
+}
+
+/* line 765, main.scss */
+.dark .large-logo {
+  font-size: 780%;
+  color: #e0e1e2;
+  margin-left: -0.05em;
+  margin-top: -0.15em;
+  float: left;
+  display: inline;
+}
+
+/* line 774, main.scss */
+#logo-text {
+  float: left;
+  clear: both;
+  display: inline;
+  margin-top: -0.5em;
+}
+
+/* line 781, main.scss */
+#copyright {
+  float: left;
+  clear: both;
+  margin: 3em 0 0;
+  display: none;
+}
+
+/* line 788, main.scss */
+#get-in-touch {
+  position: absolute;
+  top: 4.6em;
+  right: 3em;
+}
+
+/* line 794, main.scss */
+#lockup, #mobile-menu-down {
+  float: left;
+  clear: both;
+  display: inline;
+}
+
+/* line 801, main.scss */
+.light .confirm-bg .info-title {
+  border-bottom: 1px solid #272725 !important;
+}
+
+/* line 805, main.scss */
+.dark .confirm-bg .info-title {
+  border-bottom: 1px solid #e0e1e2 !important;
+}
+
+/* =============================
+   Media Queries
+   ============================= */
+/* -----------------------------
+   Mobile
+   ----------------------------- */
+@media only screen and (max-width: 720px) {
+  /* line 822, main.scss */
+  .desktop-hide {
+    display: block;
+  }
+
+  /* line 826, main.scss */
+  .mobile-hide {
+    display: none;
+  }
+
+  /* line 830, main.scss */
+  #get-in-touch {
+    float: left;
+    clear: both;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+
+  /* line 838, main.scss */
+  .light #get-in-touch-wrapper {
+    background: #ebf7fc;
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+
+  /* line 845, main.scss */
+  .dark #get-in-touch-wrapper {
+    background: #0b3e52;
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+
+  /* line 852, main.scss */
+  .light .mobile-menu {
+    font-size: 300%;
+    width: 50px;
+    margin-top: 3px;
+    color: #272725;
+    right: 0;
+    top: 15px;
+    position: absolute;
+    z-index: 3;
+  }
+
+  /* line 863, main.scss */
+  .dark .mobile-menu {
+    font-size: 300%;
+    width: 50px;
+    margin-top: 3px;
+    color: #e0e1e2;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 3;
+  }
+
+  /* line 874, main.scss */
+  .mobile-header-wrapper {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  /* line 882, main.scss */
+  .light .mobile-header-wrapper.opaque {
+    background: white;
+    border-bottom: 1px solid #272725;
+  }
+
+  /* line 887, main.scss */
+  .dark .mobile-header-wrapper.opaque {
+    background: #272725;
+    border-bottom: 1px solid #e0e1e2;
+  }
+
+  /* line 892, main.scss */
+  #chrome #left-side {
+    margin: 0;
+  }
+
+  /* line 896, main.scss */
+  #lockup {
+    padding: 1em 1em 0.5em;
+  }
+
+  /* line 900, main.scss */
+  .light .large-logo {
+    font-size: 500%;
+  }
+
+  /* line 904, main.scss */
+  .dark .large-logo {
+    font-size: 500%;
+  }
+
+  /* line 909, main.scss */
+  .light #mobile-menu-down {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 2;
+    border-bottom: 1px solid #272725;
+  }
+  /* line 918, main.scss */
+  .light #mobile-menu-down nav {
+    width: 100%;
+  }
+  /* line 921, main.scss */
+  .light #mobile-menu-down nav li {
+    width: 100%;
+    border-bottom: 1px solid #272725;
+  }
+  /* line 928, main.scss */
+  .light #mobile-menu-down h2, .light #mobile-menu-down h1 {
+    padding: 1em;
+  }
+
+  /* line 934, main.scss */
+  .dark #mobile-menu-down {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 100%;
+    background: #272725;
+    z-index: 2;
+    border-bottom: 1px solid #e0e1e2;
+  }
+  /* line 943, main.scss */
+  .dark #mobile-menu-down nav {
+    width: 100%;
+  }
+  /* line 946, main.scss */
+  .dark #mobile-menu-down nav li {
+    width: 100%;
+    border-bottom: 1px solid #e0e1e2;
+  }
+  /* line 953, main.scss */
+  .dark #mobile-menu-down h2, .dark #mobile-menu-down h1 {
+    padding: 1em;
+  }
+
+  /* line 958, main.scss */
+  #mobile-menu-down-padding {
+    padding: 3em 0 1em;
+  }
+
+  /* line 962, main.scss */
+  #logo-text {
+    clear: none;
+    margin: 0.5em 0 0 1em;
+  }
+
+  /* line 968, main.scss */
+  .contact-overlay-left .icon-close {
+    top: 20px;
+    margin-top: 0;
+  }
+
+  /* line 973, main.scss */
+  .contact-overlay-left .icon-close-wrapper {
+    height: 49px;
+  }
+
+  /* line 977, main.scss */
+  .info-overlay-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  /* line 985, main.scss */
+  .light .info-overlay {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #272725;
+  }
+
+  /* line 995, main.scss */
+  .dark .info-overlay {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #e0e1e2;
+    border-top: 1px solid #e0e1e2;
+  }
+
+  /* line 1007, main.scss */
+  .light .info-panel-left {
+    width: 30%;
+    height: 59px;
+  }
+
+  /* line 1012, main.scss */
+  .light .info-panel-right {
+    width: 69.6%;
+    height: 59px;
+  }
+
+  /* line 1017, main.scss */
+  .dark .info-panel-left {
+    width: 30%;
+    height: 59px;
+  }
+
+  /* line 1022, main.scss */
+  .dark .info-panel-right {
+    width: 69.6%;
+    height: 59px;
+  }
+
+  /* line 1027, main.scss */
+  .info-panel-right.bottom {
+    height: 100%;
+  }
+
+  /* line 1031, main.scss */
+  .contact-overlay-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* line 1037, main.scss */
+  .contact-overlay-wrapper-2 {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 1044, main.scss */
+  .light .contact-overlay-left {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border: 0px;
+    border-radius: 0px;
+    padding-bottom: 70px;
+  }
+  /* line 1052, main.scss */
+  .light .contact-overlay-left .icon-twitter {
+    font-size: 200%;
+    float: left;
+    margin: 50px 0 0;
+  }
+  /* line 1058, main.scss */
+  .light .contact-overlay-left .info-panel-padding {
+    text-align: center;
+  }
+
+  /* line 1063, main.scss */
+  .light .contact-overlay-right {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #272725;
+    border-right: 0px;
+    border-bottom: 1px solid #272725;
+    border-radius: 0px;
+  }
+
+  /* line 1072, main.scss */
+  .dark .contact-overlay-left {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    border: 0px;
+    border-radius: 0px;
+    padding-bottom: 70px;
+  }
+  /* line 1080, main.scss */
+  .dark .contact-overlay-left .icon-twitter {
+    font-size: 200%;
+    float: left;
+    margin: 50px 0 0;
+  }
+  /* line 1086, main.scss */
+  .dark .contact-overlay-left .info-panel-padding {
+    text-align: center;
+  }
+
+  /* line 1091, main.scss */
+  .dark .contact-overlay-right {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #e0e1e2;
+    border-right: 0px;
+    border-bottom: 1px solid #e0e1e2;
+    border-radius: 0px;
+  }
+
+  /* line 1101, main.scss */
+  .contact-overlay-wrapper .contact-overlay-left h2 {
+    padding: 0;
+  }
+
+  /* line 1105, main.scss */
+  .contact-overlay-wrapper .contact-overlay-left p {
+    padding: 0;
+  }
+
+  /* line 1109, main.scss */
+  #mugshot {
+    background: url(../img/mugshot-sm.png) no-repeat;
+    margin-left: 0;
+  }
+
+  /* line 1114, main.scss */
+  .contact-overlay-right h2.button {
+    padding-bottom: 70px;
+  }
+
+  /* line 1118, main.scss */
+  input, textarea {
+    width: 100%;
+  }
+
+  /* line 1122, main.scss */
+  #mugshot {
+    margin-top: 30px;
+  }
+}
+/* -----------------------------
+Tablet
+----------------------------- */
+@media only screen and (min-width: 721px) and (max-width: 880px) {
+  /* line 1141, main.scss */
+  .contact-overlay-wrapper .info-panel-left {
+    width: 110px;
+  }
+
+  /* line 1145, main.scss */
+  .contact-overlay-wrapper .info-panel-right {
+    width: 239px;
+  }
+
+  /* line 1149, main.scss */
+  .contact-overlay-wrapper .contact-overlay-left h2 {
+    padding-left: 0;
+  }
+
+  /* line 1153, main.scss */
+  .contact-overlay-wrapper .contact-overlay-left p {
+    padding: 0;
+  }
+
+  /* line 1157, main.scss */
+  #mugshot {
+    background: url(../img/mugshot-sm.png) no-repeat;
+    margin-left: 0;
+  }
+
+  /* line 1163, main.scss */
+  .contact-overlay-wrapper-2 {
+    margin-left: -350px;
+    width: 703px;
+  }
+
+  /* line 1168, main.scss */
+  .light .contact-overlay-left {
+    margin-left: 0;
+    margin-top: 0;
+    width: 350px;
+  }
+  /* line 1173, main.scss */
+  .light .contact-overlay-left .icon-twitter {
+    margin: 50px 0 0 0;
+  }
+
+  /* line 1179, main.scss */
+  .light .contact-overlay-right {
+    margin-left: 0;
+    margin-top: 0;
+    width: 350px;
+  }
+
+  /* line 1186, main.scss */
+  .dark .contact-overlay-left {
+    margin-left: 0;
+    margin-top: 0;
+    width: 350px;
+  }
+  /* line 1191, main.scss */
+  .dark .contact-overlay-left .icon-twitter {
+    margin: 50px 0 0 0;
+  }
+
+  /* line 1197, main.scss */
+  .dark .contact-overlay-right {
+    margin-left: 0;
+    margin-top: 0;
+    width: 350px;
+  }
+}
+/* -----------------------------
+ @2x
+----------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1217, main.scss */
+  .light body {
+    background: #e0e1e2 url(../img/loader@2x.gif) no-repeat center center;
+    background-size: 30px;
+  }
+
+  /* line 1222, main.scss */
+  .dark body {
+    background: #272725 url(../img/loader-dark@2x.gif) no-repeat center center;
+    background-size: 30px;
+  }
+
+  /* line 1227, main.scss */
+  #mugshot {
+    background: url(../img/mugshot.png) no-repeat;
+    background-size: 70px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ */
+/* line 1246, main.scss */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 1255, main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 1273, main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 1286, main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 1303, main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 1308, main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 1338, main.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 1347, main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 1351, main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 1355, main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  /* line 1365, main.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 1370, main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  /* line 1380, main.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 1385, main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 1389, main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 1395, main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 1401, main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
