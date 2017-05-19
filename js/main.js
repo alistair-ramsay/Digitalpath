@@ -156,7 +156,7 @@ $(document).ready(function() {
 	    data: dataString,
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
-	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message sent!');
+	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message Sent');
 	      $('.info-panel-wrapper').html("<div class='info-panel-padding'><p>Thanks! We'll be in touch.</p></div>");
 	    }
 	  });
