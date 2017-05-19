@@ -152,7 +152,7 @@ $(document).ready(function() {
 	  $.ajax({
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
 		type: "POST",
-	    url: "../DPV3/send-message.php",
+	    url: "http://formspree.io/alistair@digitalpath.co.uk",
 	    data: dataString,
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
