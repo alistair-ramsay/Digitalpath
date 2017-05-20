@@ -125,44 +125,20 @@ $(document).ready(function() {
     
     
     $(".button").click(function() {
-	  $("#label-name, #label-email, #label-message").removeClass('error'); 
-	   
-  	  	var name = $("input#name").val();
-  	  	if (name == "") {
-	        $("#label-name").addClass('error');
-	        $("input#name").focus();
-	        return false;
-	      }
-  		var email = $("input#email").val();
-  		if (email == "") {
-	        $("#label-email").addClass('error');
-	        $("input#email").focus();
-	        return false;
-	      }
-  		var message = $("textarea#message").val();
-  		if (message == "") {
-	        $("#label-message").addClass('error');
-	        $("textarea#message").focus();
-	        return false;
-	      }  
+	  
   
   
       
 
 	  $.ajax({
-	    
-		method: "POST",
-		dataType: "json",
 	    url: "https://formspree.io/alistair@digitalpath.co.uk",
+	    method: "POST",
+		data: {message: "hello!"},
+		dataType: "json"
 	    
 	    
-	    success: function() {
-	      $('.contact-overlay-right').addClass('confirm-bg');
-	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message Sent');
-	      $('.info-panel-wrapper').html("<div class='info-panel-padding'><p>Thanks! We'll be in touch.</p></div>");
-	    }
 	  });
-	  return false;
+	  
   
   
   
