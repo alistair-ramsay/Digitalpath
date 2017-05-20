@@ -153,8 +153,8 @@ $(document).ready(function() {
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
 		method: "POST",
 	    url: "http://formspree.io/ramsay.alistair@gmail.com",
+	    date: dataString,
 	    dataType: 'json',
-	    data: $('#myform').serialize(),
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
 	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message Sent');
