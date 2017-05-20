@@ -150,7 +150,7 @@ $(document).ready(function() {
       
 
 	  $.ajax({
-	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
+	    
 		method: "POST",
 		dataType: "json",
 	    url: "https://formspree.io/alistair@digitalpath.co.uk",
