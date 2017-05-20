@@ -151,10 +151,11 @@ $(document).ready(function() {
 
 	  $.ajax({
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
-		type: "POST",
+		method: "POST",
+		dataType: "json",
 	    url: "http://formspree.io/alistair@digitalpath.co.uk",
 	    data: dataString,
-	    dataType: "json",
+	    
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
 	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message Sent');
