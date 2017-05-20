@@ -151,18 +151,20 @@ $(document).ready(function() {
 
 	  $.ajax({
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
-		method: "POST",
-	    url: "https://formspree.io/alistair@digitalpath.co.uk",
+		type: "POST",
+	    url: "http://formspree.io/alistair@digitalpath.co.uk",
 	    data: dataString,
+	    dataType: "json",
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
 	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message Sent');
-	      $('.info-panel-wrapper').html("<div class='info-panel-padding'><p>Thanks! I'll be in touch.</p></div>");
+	      $('.info-panel-wrapper').html("<div class='info-panel-padding'><p>Thanks! We'll be in touch.</p></div>");
 	    }
 	  });
 	  return false;
   
-	
+  
+  
   
 
   });
