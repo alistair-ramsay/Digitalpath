@@ -153,7 +153,7 @@ $(document).ready(function() {
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
 		method: "POST",
 		dataType: "json",
-	    url: "https://formspree.io/ramsay.alistair@gmail.com",
+	    url: "https://formspree.io/ramsay.alistair@googlemail.com",
 	    data: dataString,
 	    
 	    success: function() {
