@@ -147,14 +147,14 @@ $(document).ready(function() {
 	      }  
   
   
-      var dataString = 'name='+ name + '&email=' + email + '&message=' + message;
+      
 
 	  $.ajax({
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
 		method: "POST",
 		dataType: "json",
 	    url: "https://formspree.io/alistair@digitalpath.co.uk",
-	    data: dataString,
+	    
 	    
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
