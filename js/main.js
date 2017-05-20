@@ -151,13 +151,14 @@ $(document).ready(function() {
 
 	  $.ajax({
 	    beforeSend: function() {$('.button').html('Sending, please wait a moment...')},
-		type: "POST",
+		method: "POST",
 	    url: "http://formspree.io/ramsay.alistair@gmail.com",
-	    data: dataString,
+	    dataType: 'json',
+	    data: $('#myform').serialize(),
 	    success: function() {
 	      $('.contact-overlay-right').addClass('confirm-bg');
 	      $('.contact-overlay-right .info-title .info-panel-padding h2').html('Message Sent');
-	      $('.info-panel-wrapper').html("<div class='info-panel-padding'><p>Thanks! We'll be in touch.</p></div>");
+	      $('.info-panel-wrapper').html("<div class='info-panel-padding'><p>Thanks! I'll be in touch.</p></div>");
 	    }
 	  });
 	  return false;
