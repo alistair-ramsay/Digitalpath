@@ -132,6 +132,14 @@ header, section, footer {
 		float: left;
 		text-align: left;
 	}
+	
+	.footer-contact-col p {
+		margin-top: 0;
+	}
+	
+	.copyright .col-1 {
+		text-align: center;
+	}
 }
 
 label {
@@ -144,6 +152,11 @@ input {
 	height: 1.5em;
 	width: 20em;
 }
+
+input#age {
+	width: 6em;
+}
+
 
 #income-to-sell {
 	display: inline-block;
@@ -159,6 +172,7 @@ input {
 	line-height: 1.5em;
 	margin: 0;
 	padding: 3px 6px;
+	width: 6em;
 }
 
 #currency, #per-year {
@@ -191,6 +205,8 @@ input {
 	color: #fff;
 	background: black;
 }
+
+
 
 
 

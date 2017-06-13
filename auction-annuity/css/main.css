@@ -130,26 +130,39 @@ header .col-2, section .col-2, footer .col-2 {
   float: left;
   text-align: left;
 }
+/* line 136, main.scss */
+header .footer-contact-col p, section .footer-contact-col p, footer .footer-contact-col p {
+  margin-top: 0;
+}
+/* line 140, main.scss */
+header .copyright .col-1, section .copyright .col-1, footer .copyright .col-1 {
+  text-align: center;
+}
 
-/* line 137, main.scss */
+/* line 145, main.scss */
 label {
   display: block;
   margin: 1em 0 0.5em;
 }
 
-/* line 142, main.scss */
+/* line 150, main.scss */
 input {
   border: 1px solid #000;
   height: 1.5em;
   width: 20em;
 }
 
-/* line 148, main.scss */
+/* line 156, main.scss */
+input#age {
+  width: 6em;
+}
+
+/* line 161, main.scss */
 #income-to-sell {
   display: inline-block;
 }
 
-/* line 152, main.scss */
+/* line 165, main.scss */
 #income-to-sell input {
   border: 0;
   display: inline-block;
@@ -160,9 +173,10 @@ input {
   line-height: 1.5em;
   margin: 0;
   padding: 3px 6px;
+  width: 6em;
 }
 
-/* line 164, main.scss */
+/* line 178, main.scss */
 #currency, #per-year {
   display: inline-block;
   float: left;
@@ -171,7 +185,7 @@ input {
   padding: 3px 6px;
 }
 
-/* line 172, main.scss */
+/* line 186, main.scss */
 #currency {
   border-radius: 4px 0px 0px 4px;
   -moz-border-radius: 4px 0px 0px 4px;
@@ -179,7 +193,7 @@ input {
   border: 1px solid #000;
 }
 
-/* line 179, main.scss */
+/* line 193, main.scss */
 #per-year {
   border-radius: 0px 4px 4px 0px;
   -moz-border-radius: 0px 4px 4px 0px;
@@ -187,7 +201,7 @@ input {
   border: 1px solid #000;
 }
 
-/* line 186, main.scss */
+/* line 200, main.scss */
 .button {
   display: block;
   margin: 2em 0 0.5em;
@@ -222,7 +236,7 @@ input {
 /*
  * Hide visually and from screen readers
  */
-/* line 229, main.scss */
+/* line 245, main.scss */
 .hidden {
   display: none !important;
 }
@@ -231,7 +245,7 @@ input {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 238, main.scss */
+/* line 254, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -248,7 +262,7 @@ input {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 256, main.scss */
+/* line 272, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -262,7 +276,7 @@ input {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 269, main.scss */
+/* line 285, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -278,7 +292,7 @@ input {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 286, main.scss */
+/* line 302, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -287,7 +301,7 @@ input {
   /* 2 */
 }
 
-/* line 291, main.scss */
+/* line 307, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -309,7 +323,7 @@ input {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 323, main.scss */
+  /* line 339, main.scss */
   *,
   *:before,
   *:after,
@@ -323,18 +337,18 @@ input {
     text-shadow: none !important;
   }
 
-  /* line 332, main.scss */
+  /* line 348, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 336, main.scss */
+  /* line 352, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 340, main.scss */
+  /* line 356, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -343,13 +357,13 @@ input {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 350, main.scss */
+  /* line 366, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 355, main.scss */
+  /* line 371, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -360,23 +374,23 @@ input {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 365, main.scss */
+  /* line 381, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 370, main.scss */
+  /* line 386, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 374, main.scss */
+  /* line 390, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 380, main.scss */
+  /* line 396, main.scss */
   p,
   h2,
   h3 {
@@ -384,7 +398,7 @@ input {
     widows: 3;
   }
 
-  /* line 386, main.scss */
+  /* line 402, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
