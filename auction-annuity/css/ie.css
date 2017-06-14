@@ -5,3 +5,7 @@
 .circle {
 	display: none;
 }
+
+ol > li:before {
+	color: #222;
+}
