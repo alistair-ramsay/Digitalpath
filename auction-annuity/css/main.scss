@@ -96,6 +96,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+$colour-1: #000;
+$stages-colour-1: #eee;
+$stages-colour-2: #f9f9f9;
+
 h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 }
@@ -264,12 +268,12 @@ ol > li {
 	list-style:none; /* Disable the normal item numbering */
 	max-width: 75%;
     margin: 4px auto;
-    background: #eee;
+    background: $stages-colour-1;
 	padding-top: 40px;
 }
 
 ol > li.second-bg {
-	background: #f9f9f9;
+	background: $stages-colour-2;
 }
  
 ol > li:before {
@@ -346,6 +350,11 @@ i {
     -webkit-transform: rotate(-135deg);
 }
 
+
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
 
 @media (max-width: 320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 
@@ -504,22 +513,6 @@ i {
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
