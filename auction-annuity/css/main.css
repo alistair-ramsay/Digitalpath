@@ -9,7 +9,7 @@
    ========================================================================== */
 /* line 13, main.scss */
 html {
-  color: #222;
+  color: #002849;
   font-size: 1em;
   line-height: 1.4;
   font-family: 'Open Sans', sans-serif;
@@ -95,49 +95,54 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* line 103, main.scss */
+.mobile-only {
+  display: none;
+}
+
+/* line 107, main.scss */
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
 
-/* line 107, main.scss */
+/* line 111, main.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 111, main.scss */
+/* line 115, main.scss */
 header, section, footer {
   width: 100%;
   float: left;
   text-align: center;
 }
-/* line 116, main.scss */
+/* line 120, main.scss */
 header .logo, section .logo, footer .logo {
   width: 10em;
 }
-/* line 120, main.scss */
+/* line 124, main.scss */
 header .section-padding, section .section-padding, footer .section-padding {
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
-/* line 126, main.scss */
+/* line 130, main.scss */
 header .padding, section .padding, footer .padding {
   padding: 20px;
 }
-/* line 130, main.scss */
+/* line 134, main.scss */
 header .side-padding, section .side-padding, footer .side-padding {
   padding: 0 20px;
 }
-/* line 135, main.scss */
+/* line 139, main.scss */
 header .col-1, section .col-1, footer .col-1 {
   width: 100%;
   text-align: left;
 }
-/* line 140, main.scss */
+/* line 144, main.scss */
 header .col-1.stages, section .col-1.stages, footer .col-1.stages {
   text-align: center;
 }
-/* line 144, main.scss */
+/* line 148, main.scss */
 header .col-3, section .col-3, footer .col-3 {
   width: 33.3%;
   margin: 0 auto;
@@ -145,7 +150,7 @@ header .col-3, section .col-3, footer .col-3 {
   float: left;
   text-align: left;
 }
-/* line 152, main.scss */
+/* line 156, main.scss */
 header .col-2, section .col-2, footer .col-2 {
   width: 50%;
   margin: 0 auto;
@@ -153,24 +158,24 @@ header .col-2, section .col-2, footer .col-2 {
   float: left;
   text-align: left;
 }
-/* line 160, main.scss */
+/* line 164, main.scss */
 header .footer-contact-col p, section .footer-contact-col p, footer .footer-contact-col p {
   margin-top: 0;
 }
-/* line 164, main.scss */
+/* line 168, main.scss */
 header .copyright .col-1, section .copyright .col-1, footer .copyright .col-1 {
   text-align: center;
 }
 
-/* line 169, main.scss */
+/* line 173, main.scss */
 label {
   display: block;
   margin: 1em 0 0.5em;
 }
 
-/* line 174, main.scss */
+/* line 178, main.scss */
 input {
-  border: 1px solid #000;
+  border: 1px solid #002849;
   height: 1.5em;
   width: 100%;
   border-radius: 4px;
@@ -178,24 +183,24 @@ input {
   -webkit-border-radius: 4px;
 }
 
-/* line 183, main.scss */
+/* line 187, main.scss */
 input#age {
   width: 6em;
 }
 
-/* line 188, main.scss */
+/* line 192, main.scss */
 #income-to-sell {
   display: inline-block;
 }
 
-/* line 192, main.scss */
+/* line 196, main.scss */
 #income-to-sell input {
   border: 0;
   display: inline-block;
   float: left;
   height: 1.5em;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #002849;
+  border-bottom: 1px solid #002849;
   line-height: 1.5em;
   margin: 0;
   padding: 3px 0;
@@ -205,7 +210,7 @@ input#age {
   -webkit-border-radius: 0;
 }
 
-/* line 208, main.scss */
+/* line 212, main.scss */
 #currency, #per-year {
   display: inline-block;
   float: left;
@@ -214,32 +219,31 @@ input#age {
   padding: 3px 6px;
 }
 
-/* line 216, main.scss */
+/* line 220, main.scss */
 #currency {
   border-radius: 4px 0px 0px 4px;
   -moz-border-radius: 4px 0px 0px 4px;
   -webkit-border-radius: 4px 0px 0px 4px;
-  border: 1px solid #000;
+  border: 1px solid #002849;
 }
 
-/* line 223, main.scss */
+/* line 227, main.scss */
 #per-year {
   border-radius: 0px 4px 4px 0px;
   -moz-border-radius: 0px 4px 4px 0px;
   -webkit-border-radius: 0px 4px 4px 0px;
-  border: 1px solid #000;
+  border: 1px solid #002849;
 }
 
-/* line 230, main.scss */
+/* line 234, main.scss */
 .button {
-  display: block;
   margin: 2em 0 0.5em;
   height: 2.5em;
   line-height: 2.5em;
   padding: 0;
   border: 0;
   color: white;
-  background: black;
+  background: #00437b;
   -webkit-transition: all .4s linear;
   -moz-transition: all .4s linear;
   -o-transition: all .4s linear;
@@ -251,20 +255,20 @@ input#age {
   text-align: center;
 }
 
-/* line 250, main.scss */
+/* line 253, main.scss */
 .button:hover {
-  color: black;
-  background: white;
+  color: white;
+  background: #002849;
 }
 
-/* line 255, main.scss */
+/* line 258, main.scss */
 .register-scroll {
   float: right;
   margin-top: 15px;
   width: 20em;
 }
 
-/* line 261, main.scss */
+/* line 264, main.scss */
 ol {
   counter-reset: li;
   /* Initiate a counter */
@@ -274,7 +278,7 @@ ol {
   /* Remove the default left padding */
 }
 
-/* line 266, main.scss */
+/* line 269, main.scss */
 ol > li {
   position: relative;
   /* Create a positioning context */
@@ -286,12 +290,12 @@ ol > li {
   padding-top: 40px;
 }
 
-/* line 275, main.scss */
+/* line 278, main.scss */
 ol > li.second-bg {
   background: #f9f9f9;
 }
 
-/* line 279, main.scss */
+/* line 282, main.scss */
 ol > li:before {
   content: counter(li);
   /* Use the counter as content */
@@ -307,31 +311,31 @@ ol > li:before {
   position: relative;
 }
 
-/* line 295, main.scss */
+/* line 298, main.scss */
 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  background: black;
+  background: #002849;
   position: absolute;
   top: 40px;
   left: 50%;
   margin-left: -25px;
 }
 
-/* line 308, main.scss */
+/* line 311, main.scss */
 ol > li h3 {
   margin-top: 0;
 }
 
-/* line 312, main.scss */
+/* line 315, main.scss */
 .arrow-down {
   border: 4px solid white;
   width: 50px;
   height: 50px;
-  background: #eee;
+  background: #eeeeee;
   -ms-transform: rotate(45deg);
   /* IE 9 */
   -webkit-transform: rotate(45deg);
@@ -341,7 +345,12 @@ ol > li h3 {
   top: -49px;
 }
 
-/* line 324, main.scss */
+/* line 327, main.scss */
+.arrow-down.colour-2 {
+  background: #f9f9f9;
+}
+
+/* line 331, main.scss */
 .arrow-down-mask {
   height: 20px;
   overflow: hidden;
@@ -353,22 +362,27 @@ ol > li h3 {
   z-index: 1;
 }
 
-/* line 335, main.scss */
+/* line 342, main.scss */
+footer {
+  font-size: small;
+}
+
+/* line 346, main.scss */
 #back-to-top {
   cursor: pointer;
   float: right;
 }
 
-/* line 340, main.scss */
+/* line 351, main.scss */
 i {
-  border: solid black;
+  border: solid #002849;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 2px;
   margin-left: 0.5em;
 }
 
-/* line 348, main.scss */
+/* line 359, main.scss */
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
@@ -377,65 +391,78 @@ i {
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
-@media (max-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
-@media (max-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
+@media (max-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops and desktops */
+  /* line 377, main.scss */
+  .register-scroll {
+    width: 15em;
+  }
 }
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  /* line 367, main.scss */
+  /* line 387, main.scss */
+  header .mobile-only, section .mobile-only, footer .mobile-only {
+    display: block;
+  }
+  /* line 391, main.scss */
+  header .desktop-only, section .desktop-only, footer .desktop-only {
+    display: none;
+  }
+  /* line 395, main.scss */
   header .side-padding, section .side-padding, footer .side-padding {
     padding: 0;
   }
-  /* line 370, main.scss */
+  /* line 398, main.scss */
   header .col-3, section .col-3, footer .col-3 {
     width: 100%;
   }
-  /* line 374, main.scss */
+  /* line 402, main.scss */
   header .col-2, section .col-2, footer .col-2 {
     width: 100%;
   }
-  /* line 377, main.scss */
+  /* line 405, main.scss */
   header .copyright .col-1, section .copyright .col-1, footer .copyright .col-1 {
     text-align: left;
   }
-  /* line 380, main.scss */
+  /* line 408, main.scss */
   header .copyright #back-to-top, section .copyright #back-to-top, footer .copyright #back-to-top {
     width: 100%;
     margin: 20px 0 40px;
   }
-  /* line 385, main.scss */
+  /* line 413, main.scss */
   header input, section input, footer input {
     width: 100%;
   }
-  /* line 389, main.scss */
-  header #register-scroll, section #register-scroll, footer #register-scroll {
+  /* line 417, main.scss */
+  header .register-scroll, section .register-scroll, footer .register-scroll {
+    float: left;
     width: 100%;
   }
-  /* line 393, main.scss */
+  /* line 422, main.scss */
   header ol > li, section ol > li, footer ol > li {
     max-width: 100%;
-    margin: 40px 0;
+    margin: 4px 0;
   }
-}
-@media (max-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops and desktops */
 }
 @media (min-width: 600px) and (max-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  /* line 404, main.scss */
+  /* line 432, main.scss */
   header .col-3, section .col-3, footer .col-3 {
     width: 100%;
   }
-  /* line 408, main.scss */
+  /* line 436, main.scss */
   header .footer-contact-col, section .footer-contact-col, footer .footer-contact-col {
     width: 100%;
   }
 }
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 }
 /* @2x test */
 /* ==========================================================================
@@ -444,7 +471,7 @@ i {
 /*
  * Hide visually and from screen readers
  */
-/* line 450, main.scss */
+/* line 485, main.scss */
 .hidden {
   display: none !important;
 }
@@ -453,7 +480,7 @@ i {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 459, main.scss */
+/* line 494, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -470,7 +497,7 @@ i {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 477, main.scss */
+/* line 512, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -484,7 +511,7 @@ i {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 490, main.scss */
+/* line 525, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -500,7 +527,7 @@ i {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 507, main.scss */
+/* line 542, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -509,7 +536,7 @@ i {
   /* 2 */
 }
 
-/* line 512, main.scss */
+/* line 547, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -520,7 +547,7 @@ i {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 528, main.scss */
+  /* line 563, main.scss */
   *,
   *:before,
   *:after,
@@ -534,18 +561,18 @@ i {
     text-shadow: none !important;
   }
 
-  /* line 537, main.scss */
+  /* line 572, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 541, main.scss */
+  /* line 576, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 545, main.scss */
+  /* line 580, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -554,13 +581,13 @@ i {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 555, main.scss */
+  /* line 590, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 560, main.scss */
+  /* line 595, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -571,23 +598,23 @@ i {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 570, main.scss */
+  /* line 605, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 575, main.scss */
+  /* line 610, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 579, main.scss */
+  /* line 614, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 585, main.scss */
+  /* line 620, main.scss */
   p,
   h2,
   h3 {
@@ -595,7 +622,7 @@ i {
     widows: 3;
   }
 
-  /* line 591, main.scss */
+  /* line 626, main.scss */
   h2,
   h3 {
     page-break-after: avoid;

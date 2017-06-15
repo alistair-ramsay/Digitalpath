@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #002849;
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Open Sans', sans-serif;
@@ -96,10 +96,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-$colour-1: #000;
+$brand-colour-1: #002849;
 $stages-colour-1: #eee;
 $stages-colour-2: #f9f9f9;
 
+.mobile-only {
+	display: none;
+}
+	
 h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 }
@@ -172,7 +176,7 @@ label {
 }
 
 input {
-	border: 1px solid #000;
+	border: 1px solid $brand-colour-1;
 	height: 1.5em;
 	width: 100%;
 	border-radius: 4px;
@@ -194,8 +198,8 @@ input#age {
 	display: inline-block;
 	float: left;
 	height: 1.5em;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
+	border-top: 1px solid $brand-colour-1;
+	border-bottom: 1px solid $brand-colour-1;
 	line-height: 1.5em;
 	margin: 0;
 	padding: 3px 0;
@@ -217,25 +221,24 @@ input#age {
 	border-radius: 4px 0px 0px 4px;
 	-moz-border-radius: 4px 0px 0px 4px;
 	-webkit-border-radius: 4px 0px 0px 4px;
-	border: 1px solid #000;
+	border: 1px solid $brand-colour-1;
 }
 
 #per-year {
 	border-radius: 0px 4px 4px 0px;
 	-moz-border-radius: 0px 4px 4px 0px;
 	-webkit-border-radius: 0px 4px 4px 0px;
-	border: 1px solid #000;
+	border: 1px solid $brand-colour-1;
 }
 
 .button {
-	display: block;
 	margin: 2em 0 0.5em;
 	height: 2.5em;
 	line-height: 2.5em;
 	padding: 0;
 	border: 0;
 	color: white;
-	background: black;
+	background: #00437b;
 	-webkit-transition: all .4s linear;
 	-moz-transition: all .4s linear;
 	-o-transition: all .4s linear;
@@ -248,8 +251,8 @@ input#age {
 }
 
 .button:hover {
-	color: black;
-	background: white;
+	color: white;
+	background: $brand-colour-1;
 }
 
 .register-scroll {
@@ -298,7 +301,7 @@ ol ol li:last-child {}
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	background: black;
+	background: $brand-colour-1;
 	position: absolute;
 	top: 40px;
     left: 50%;
@@ -313,12 +316,16 @@ ol > li h3 {
 	border: 4px solid white;
 	width: 50px;
 	height: 50px;
-	background: #eee;
+	background: $stages-colour-1;
 	-ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
     position: absolute;
     top: -49px;
+}
+
+.arrow-down.colour-2 {
+	background: $stages-colour-2;
 }
 
 .arrow-down-mask {
@@ -332,13 +339,17 @@ ol > li h3 {
 	z-index: 1;
 }
 
+footer {
+	font-size: small;
+}
+
 #back-to-top {
 	cursor: pointer;
 	float: right;
 }
 
 i {
-    border: solid black;
+    border: solid $brand-colour-1;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 2px;
@@ -356,15 +367,32 @@ i {
    Media Queries for Responsive Design.
    ========================================================================== */
 
-@media (max-width: 320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 
-@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+@media (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops and desktops */ 
+
+	.register-scroll {
+	    width: 15em;
+	}
+
+}
 
 @media (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 
 	header, section, footer {
 		
-		.side-padding {
+		.mobile-only {
+			display: block;
+		}
+		
+		.desktop-only {
+			display: none;
+		}
+
+.side-padding {
 			padding: 0;
 		}
 		.col-3 {
@@ -386,17 +414,17 @@ i {
 			width: 100%;
     	}
     	
-    	#register-scroll {
+    	.register-scroll {
+			float: left;
 			width: 100%;
 		}
 		
 		ol > li {
 		    max-width: 100%;
-		    margin: 40px 0;
+		    margin: 4px 0;
 		}
 	}	
 }
-@media (max-width:801px)  { /* tablet, landscape iPad, lo-res laptops and desktops */ }
 
 @media (min-width:600px) and (max-width:1025px) { /* big landscape tablets, laptops, and desktops */
 
@@ -416,7 +444,14 @@ i {
 	}
 
 }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+
+@media (max-width: 320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+
+
+
 
 
 
