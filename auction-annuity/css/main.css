@@ -105,83 +105,88 @@ h1, h2, h3 {
 }
 
 /* line 112, main.scss */
-h2 {
-  font-size: 125%;
+h1 {
+  font-size: 175%;
 }
 
 /* line 116, main.scss */
+h2, h3 {
+  font-size: 125%;
+}
+
+/* line 120, main.scss */
 p {
   margin: 20px 0;
 }
 
-/* line 120, main.scss */
+/* line 124, main.scss */
 a {
   color: #0dd1ff;
 }
 
-/* line 124, main.scss */
+/* line 128, main.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 128, main.scss */
+/* line 132, main.scss */
 header, section, footer {
   width: 100%;
   float: left;
   text-align: center;
 }
 
-/* line 134, main.scss */
+/* line 138, main.scss */
 .logo {
   width: 10em;
 }
 
-/* line 138, main.scss */
+/* line 142, main.scss */
 .section-padding {
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 144, main.scss */
+/* line 148, main.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 148, main.scss */
+/* line 152, main.scss */
 .side-padding {
   padding: 0 20px;
 }
 
-/* line 152, main.scss */
+/* line 156, main.scss */
 .col-1 {
   width: 100%;
   text-align: left;
 }
 
-/* line 157, main.scss */
+/* line 161, main.scss */
 .col-1.stages {
   text-align: center;
 }
 
-/* line 161, main.scss */
+/* line 165, main.scss */
 .col-3 {
   width: 33.3%;
   margin: 0 auto;
   display: inline-block;
   float: left;
 }
-/* line 167, main.scss */
+/* line 171, main.scss */
 .col-3 h2 {
   text-align: left;
 }
-/* line 171, main.scss */
+/* line 175, main.scss */
 .col-3 img {
   width: 65%;
   max-width: 200px;
 }
 
-/* line 177, main.scss */
+/* line 181, main.scss */
 .col-2 {
   width: 50%;
   margin: 0 auto;
@@ -190,7 +195,7 @@ header, section, footer {
   text-align: left;
 }
 
-/* line 185, main.scss */
+/* line 189, main.scss */
 #intro {
   text-align: center;
   background: #b2f1ff url("../img/hero.jpg") no-repeat;
@@ -198,18 +203,14 @@ header, section, footer {
   background-size: cover;
   margin: 15px 0 0;
 }
-/* line 192, main.scss */
+/* line 196, main.scss */
 #intro .side-padding {
   position: relative;
 }
-/* line 196, main.scss */
+/* line 200, main.scss */
 #intro .copy {
   padding: 20px 0;
   width: 50%;
-}
-/* line 201, main.scss */
-#intro h1 {
-  font-size: 175%;
 }
 /* line 205, main.scss */
 #intro img {
@@ -525,59 +526,69 @@ i {
   }
 
   /* line 497, main.scss */
+  h1 {
+    font-size: 150%;
+  }
+
+  /* line 501, main.scss */
+  h2 {
+    font-size: 100%;
+  }
+
+  /* line 505, main.scss */
+  h3 {
+    font-size: 100%;
+  }
+
+  /* line 509, main.scss */
   .intro-shape-left, .intro-shape-right {
     display: none;
   }
 
-  /* line 501, main.scss */
+  /* line 513, main.scss */
   #intro .copy {
     width: 100%;
   }
 
-  /* line 505, main.scss */
+  /* line 517, main.scss */
   #intro {
     background-position: 32%;
     padding-bottom: 40px;
   }
 
-  /* line 510, main.scss */
-  #intro h1 {
-    font-size: 150%;
-  }
-
-  /* line 514, main.scss */
+  /* line 523, main.scss */
   .col-3 {
     width: 100%;
   }
 
-  /* line 518, main.scss */
+  /* line 527, main.scss */
   .col-2 {
     width: 100%;
   }
 
-  /* line 522, main.scss */
+  /* line 531, main.scss */
   .copyright .col-1 {
     text-align: left;
   }
 
-  /* line 526, main.scss */
+  /* line 535, main.scss */
   .copyright #back-to-top {
     width: 100%;
     margin: 20px 0 40px;
   }
 
-  /* line 531, main.scss */
+  /* line 540, main.scss */
   input {
     width: 100%;
   }
 
-  /* line 535, main.scss */
+  /* line 544, main.scss */
   .register-scroll {
     float: left;
     width: 100%;
   }
 
-  /* line 540, main.scss */
+  /* line 549, main.scss */
   ol > li {
     max-width: 100%;
     margin: 4px 0;
@@ -585,11 +596,11 @@ i {
 }
 @media (min-width: 600px) and (max-width: 1000px) {
   /* big landscape tablets, laptops, and desktops */
-  /* line 550, main.scss */
+  /* line 559, main.scss */
   header .col-3, section .col-3, footer .col-3 {
     width: 50%;
   }
-  /* line 554, main.scss */
+  /* line 563, main.scss */
   header .footer-contact-col, section .footer-contact-col, footer .footer-contact-col {
     width: 100%;
   }
@@ -607,7 +618,7 @@ i {
 /*
  * Hide visually and from screen readers
  */
-/* line 603, main.scss */
+/* line 612, main.scss */
 .hidden {
   display: none !important;
 }
@@ -616,7 +627,7 @@ i {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 612, main.scss */
+/* line 621, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -633,7 +644,7 @@ i {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 630, main.scss */
+/* line 639, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -647,7 +658,7 @@ i {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 643, main.scss */
+/* line 652, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -663,7 +674,7 @@ i {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 660, main.scss */
+/* line 669, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -672,7 +683,7 @@ i {
   /* 2 */
 }
 
-/* line 665, main.scss */
+/* line 674, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -683,7 +694,7 @@ i {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 681, main.scss */
+  /* line 690, main.scss */
   *,
   *:before,
   *:after,
@@ -697,18 +708,18 @@ i {
     text-shadow: none !important;
   }
 
-  /* line 690, main.scss */
+  /* line 699, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 694, main.scss */
+  /* line 703, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 698, main.scss */
+  /* line 707, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -717,13 +728,13 @@ i {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 708, main.scss */
+  /* line 717, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 713, main.scss */
+  /* line 722, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -734,23 +745,23 @@ i {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 723, main.scss */
+  /* line 732, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 728, main.scss */
+  /* line 737, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 732, main.scss */
+  /* line 741, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 738, main.scss */
+  /* line 747, main.scss */
   p,
   h2,
   h3 {
@@ -758,7 +769,7 @@ i {
     widows: 3;
   }
 
-  /* line 744, main.scss */
+  /* line 753, main.scss */
   h2,
   h3 {
     page-break-after: avoid;

@@ -109,7 +109,11 @@ h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 }
 
-h2 {
+h1 {
+	font-size: 175%;	
+}
+
+h2, h3 {
 	font-size: 125%;	
 }
 
@@ -196,10 +200,6 @@ header, section, footer {
 	.copy {
 		padding: 20px 0;
 		width: 50%;
-	}
-	
-	h1 {
-		font-size: 175%;
 	}
 	
 	img {
@@ -493,6 +493,18 @@ i {
 	.side-padding {
 		padding: 0;
 	}
+	
+	h1 {
+		font-size: 150%;
+	}
+	
+	h2 {
+		font-size: 100%;	
+	}
+	
+	h3 {
+		font-size: 100%;	
+	}
 		
 	.intro-shape-left, .intro-shape-right {
 		display: none;
@@ -507,9 +519,6 @@ i {
 	    padding-bottom: 40px;
 	}
 	
-	#intro h1 {
-    	font-size: 150%;
-	}
 
 	.col-3 {
 		width: 100%;
