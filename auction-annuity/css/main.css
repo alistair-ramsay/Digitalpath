@@ -541,38 +541,43 @@ i {
   }
 
   /* line 510, main.scss */
+  h1 {
+    font-size: 150%;
+  }
+
+  /* line 514, main.scss */
   .col-3 {
     width: 100%;
   }
 
-  /* line 514, main.scss */
+  /* line 518, main.scss */
   .col-2 {
     width: 100%;
   }
 
-  /* line 518, main.scss */
+  /* line 522, main.scss */
   .copyright .col-1 {
     text-align: left;
   }
 
-  /* line 522, main.scss */
+  /* line 526, main.scss */
   .copyright #back-to-top {
     width: 100%;
     margin: 20px 0 40px;
   }
 
-  /* line 527, main.scss */
+  /* line 531, main.scss */
   input {
     width: 100%;
   }
 
-  /* line 531, main.scss */
+  /* line 535, main.scss */
   .register-scroll {
     float: left;
     width: 100%;
   }
 
-  /* line 536, main.scss */
+  /* line 540, main.scss */
   ol > li {
     max-width: 100%;
     margin: 4px 0;
@@ -580,11 +585,11 @@ i {
 }
 @media (min-width: 600px) and (max-width: 1000px) {
   /* big landscape tablets, laptops, and desktops */
-  /* line 546, main.scss */
+  /* line 550, main.scss */
   header .col-3, section .col-3, footer .col-3 {
     width: 50%;
   }
-  /* line 550, main.scss */
+  /* line 554, main.scss */
   header .footer-contact-col, section .footer-contact-col, footer .footer-contact-col {
     width: 100%;
   }
@@ -602,7 +607,7 @@ i {
 /*
  * Hide visually and from screen readers
  */
-/* line 599, main.scss */
+/* line 603, main.scss */
 .hidden {
   display: none !important;
 }
@@ -611,7 +616,7 @@ i {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 608, main.scss */
+/* line 612, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -628,7 +633,7 @@ i {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 626, main.scss */
+/* line 630, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -642,7 +647,7 @@ i {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 639, main.scss */
+/* line 643, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -658,7 +663,7 @@ i {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 656, main.scss */
+/* line 660, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -667,7 +672,7 @@ i {
   /* 2 */
 }
 
-/* line 661, main.scss */
+/* line 665, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -678,7 +683,7 @@ i {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 677, main.scss */
+  /* line 681, main.scss */
   *,
   *:before,
   *:after,
@@ -692,18 +697,18 @@ i {
     text-shadow: none !important;
   }
 
-  /* line 686, main.scss */
+  /* line 690, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 690, main.scss */
+  /* line 694, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 694, main.scss */
+  /* line 698, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -712,13 +717,13 @@ i {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 704, main.scss */
+  /* line 708, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 709, main.scss */
+  /* line 713, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -729,23 +734,23 @@ i {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 719, main.scss */
+  /* line 723, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 724, main.scss */
+  /* line 728, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 728, main.scss */
+  /* line 732, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 734, main.scss */
+  /* line 738, main.scss */
   p,
   h2,
   h3 {
@@ -753,7 +758,7 @@ i {
     widows: 3;
   }
 
-  /* line 740, main.scss */
+  /* line 744, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
