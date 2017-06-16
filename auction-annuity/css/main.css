@@ -94,86 +94,156 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 103, main.scss */
+/* line 104, main.scss */
 .mobile-only {
   display: none;
 }
 
-/* line 107, main.scss */
+/* line 108, main.scss */
 h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
 
-/* line 111, main.scss */
+/* line 112, main.scss */
+h2 {
+  font-size: 125%;
+}
+
+/* line 116, main.scss */
+p {
+  margin: 20px 0;
+}
+
+/* line 120, main.scss */
+a {
+  color: #0dd1ff;
+}
+
+/* line 124, main.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 115, main.scss */
+/* line 128, main.scss */
 header, section, footer {
   width: 100%;
   float: left;
   text-align: center;
 }
-/* line 120, main.scss */
-header .logo, section .logo, footer .logo {
+
+/* line 134, main.scss */
+.logo {
   width: 10em;
 }
-/* line 124, main.scss */
-header .section-padding, section .section-padding, footer .section-padding {
+
+/* line 138, main.scss */
+.section-padding {
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
 }
-/* line 130, main.scss */
-header .padding, section .padding, footer .padding {
+
+/* line 144, main.scss */
+.padding {
   padding: 20px;
 }
-/* line 134, main.scss */
-header .side-padding, section .side-padding, footer .side-padding {
+
+/* line 148, main.scss */
+.side-padding {
   padding: 0 20px;
 }
-/* line 139, main.scss */
-header .col-1, section .col-1, footer .col-1 {
+
+/* line 152, main.scss */
+.col-1 {
   width: 100%;
   text-align: left;
 }
-/* line 144, main.scss */
-header .col-1.stages, section .col-1.stages, footer .col-1.stages {
+
+/* line 157, main.scss */
+.col-1.stages {
   text-align: center;
 }
-/* line 148, main.scss */
-header .col-3, section .col-3, footer .col-3 {
+
+/* line 161, main.scss */
+.col-3 {
   width: 33.3%;
   margin: 0 auto;
   display: inline-block;
   float: left;
+}
+/* line 167, main.scss */
+.col-3 h2 {
   text-align: left;
 }
-/* line 156, main.scss */
-header .col-2, section .col-2, footer .col-2 {
+/* line 171, main.scss */
+.col-3 img {
+  width: 65%;
+  max-width: 200px;
+}
+
+/* line 177, main.scss */
+.col-2 {
   width: 50%;
   margin: 0 auto;
   display: inline-block;
   float: left;
   text-align: left;
 }
-/* line 164, main.scss */
-header .footer-contact-col p, section .footer-contact-col p, footer .footer-contact-col p {
-  margin-top: 0;
-}
-/* line 168, main.scss */
-header .copyright .col-1, section .copyright .col-1, footer .copyright .col-1 {
+
+/* line 185, main.scss */
+#intro {
   text-align: center;
+  background: #b2f1ff url("../img/hero.jpg") no-repeat;
+  background-position: 33.3%;
+  background-size: cover;
+  margin: 15px 0 0;
+}
+/* line 192, main.scss */
+#intro .side-padding {
+  position: relative;
+}
+/* line 196, main.scss */
+#intro .copy {
+  padding: 20px 0;
+  width: 50%;
+}
+/* line 201, main.scss */
+#intro h1 {
+  font-size: 175%;
+}
+/* line 205, main.scss */
+#intro img {
+  width: 100%;
+}
+/* line 210, main.scss */
+#intro .section-padding {
+  padding: 0 20px;
+}
+/* line 220, main.scss */
+#intro .intro-shape-left {
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid white;
+}
+/* line 226, main.scss */
+#intro .intro-shape-right {
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid white;
 }
 
-/* line 173, main.scss */
+/* line 233, main.scss */
+#form {
+  background: #deecf7;
+  padding: 10px 0 50px;
+  margin-top: 100px;
+}
+
+/* line 239, main.scss */
 label {
   display: block;
   margin: 1em 0 0.5em;
 }
 
-/* line 178, main.scss */
+/* line 244, main.scss */
 input {
   border: 1px solid #002849;
   height: 1.5em;
@@ -183,17 +253,17 @@ input {
   -webkit-border-radius: 4px;
 }
 
-/* line 187, main.scss */
+/* line 253, main.scss */
 input#age {
   width: 6em;
 }
 
-/* line 192, main.scss */
+/* line 257, main.scss */
 #income-to-sell {
   display: inline-block;
 }
 
-/* line 196, main.scss */
+/* line 261, main.scss */
 #income-to-sell input {
   border: 0;
   display: inline-block;
@@ -210,7 +280,7 @@ input#age {
   -webkit-border-radius: 0;
 }
 
-/* line 212, main.scss */
+/* line 277, main.scss */
 #currency, #per-year {
   display: inline-block;
   float: left;
@@ -219,7 +289,7 @@ input#age {
   padding: 3px 6px;
 }
 
-/* line 220, main.scss */
+/* line 285, main.scss */
 #currency {
   border-radius: 4px 0px 0px 4px;
   -moz-border-radius: 4px 0px 0px 4px;
@@ -227,7 +297,7 @@ input#age {
   border: 1px solid #002849;
 }
 
-/* line 227, main.scss */
+/* line 292, main.scss */
 #per-year {
   border-radius: 0px 4px 4px 0px;
   -moz-border-radius: 0px 4px 4px 0px;
@@ -235,7 +305,7 @@ input#age {
   border: 1px solid #002849;
 }
 
-/* line 234, main.scss */
+/* line 299, main.scss */
 .button {
   margin: 2em 0 0.5em;
   height: 2.5em;
@@ -243,11 +313,11 @@ input#age {
   padding: 0;
   border: 0;
   color: white;
-  background: #00437b;
-  -webkit-transition: all .4s linear;
-  -moz-transition: all .4s linear;
-  -o-transition: all .4s linear;
-  transition: all .4s linear;
+  background: #002849;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
   cursor: pointer;
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -255,20 +325,25 @@ input#age {
   text-align: center;
 }
 
-/* line 253, main.scss */
+/* line 318, main.scss */
 .button:hover {
-  color: white;
-  background: #002849;
+  color: #0dd1ff;
+  background: #005396;
 }
 
-/* line 258, main.scss */
+/* line 323, main.scss */
 .register-scroll {
   float: right;
   margin-top: 15px;
   width: 20em;
 }
 
-/* line 264, main.scss */
+/* line 329, main.scss */
+.stages-header {
+  margin: 100px 0 40px;
+}
+
+/* line 333, main.scss */
 ol {
   counter-reset: li;
   /* Initiate a counter */
@@ -278,7 +353,7 @@ ol {
   /* Remove the default left padding */
 }
 
-/* line 269, main.scss */
+/* line 339, main.scss */
 ol > li {
   position: relative;
   /* Create a positioning context */
@@ -286,16 +361,16 @@ ol > li {
   /* Disable the normal item numbering */
   max-width: 75%;
   margin: 4px auto;
-  background: #eeeeee;
+  background: #deecf7;
   padding-top: 40px;
 }
 
-/* line 278, main.scss */
+/* line 348, main.scss */
 ol > li.second-bg {
-  background: #f9f9f9;
+  background: #c0d7ea;
 }
 
-/* line 282, main.scss */
+/* line 352, main.scss */
 ol > li:before {
   content: counter(li);
   /* Use the counter as content */
@@ -311,7 +386,7 @@ ol > li:before {
   position: relative;
 }
 
-/* line 298, main.scss */
+/* line 369, main.scss */
 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -325,17 +400,17 @@ ol > li:before {
   margin-left: -25px;
 }
 
-/* line 311, main.scss */
+/* line 382, main.scss */
 ol > li h3 {
   margin-top: 0;
 }
 
-/* line 315, main.scss */
+/* line 386, main.scss */
 .arrow-down {
   border: 4px solid white;
   width: 50px;
   height: 50px;
-  background: #eeeeee;
+  background: #deecf7;
   -ms-transform: rotate(45deg);
   /* IE 9 */
   -webkit-transform: rotate(45deg);
@@ -345,12 +420,12 @@ ol > li h3 {
   top: -49px;
 }
 
-/* line 327, main.scss */
+/* line 398, main.scss */
 .arrow-down.colour-2 {
-  background: #f9f9f9;
+  background: #c0d7ea;
 }
 
-/* line 331, main.scss */
+/* line 402, main.scss */
 .arrow-down-mask {
   height: 20px;
   overflow: hidden;
@@ -362,27 +437,53 @@ ol > li h3 {
   z-index: 1;
 }
 
-/* line 342, main.scss */
+/* line 413, main.scss */
 footer {
   font-size: small;
+  border-top: 4px solid #c0d7ea;
+  margin-top: 20px;
+}
+/* line 418, main.scss */
+footer .col-2 {
+  padding-bottom: 15px;
+}
+/* line 422, main.scss */
+footer p {
+  margin: 10px 0;
 }
 
-/* line 346, main.scss */
+/* line 427, main.scss */
+.footer-2 {
+  background: #002849;
+  color: white;
+}
+
+/* line 432, main.scss */
+.footer-contact-col p {
+  margin-top: 0;
+}
+
+/* line 436, main.scss */
+.copyright .col-1 {
+  text-align: center;
+}
+
+/* line 440, main.scss */
 #back-to-top {
   cursor: pointer;
   float: right;
 }
 
-/* line 351, main.scss */
+/* line 445, main.scss */
 i {
-  border: solid #002849;
+  border: solid white;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 2px;
   margin-left: 0.5em;
 }
 
-/* line 359, main.scss */
+/* line 453, main.scss */
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
@@ -396,64 +497,94 @@ i {
 }
 @media (max-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops and desktops */
-  /* line 377, main.scss */
+  /* line 471, main.scss */
   .register-scroll {
     width: 15em;
+  }
+
+  /* line 475, main.scss */
+  #intro {
+    background-position: 50%;
   }
 }
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-  /* line 387, main.scss */
-  header .mobile-only, section .mobile-only, footer .mobile-only {
+  /* line 485, main.scss */
+  .mobile-only {
     display: block;
   }
-  /* line 391, main.scss */
-  header .desktop-only, section .desktop-only, footer .desktop-only {
+
+  /* line 489, main.scss */
+  .desktop-only {
     display: none;
   }
-  /* line 395, main.scss */
-  header .side-padding, section .side-padding, footer .side-padding {
+
+  /* line 493, main.scss */
+  .side-padding {
     padding: 0;
   }
-  /* line 398, main.scss */
-  header .col-3, section .col-3, footer .col-3 {
+
+  /* line 497, main.scss */
+  .intro-shape-left, .intro-shape-right {
+    display: none;
+  }
+
+  /* line 501, main.scss */
+  #intro .copy {
     width: 100%;
   }
-  /* line 402, main.scss */
-  header .col-2, section .col-2, footer .col-2 {
+
+  /* line 505, main.scss */
+  #intro {
+    background-position: 32%;
+    padding-bottom: 40px;
+  }
+
+  /* line 510, main.scss */
+  .col-3 {
     width: 100%;
   }
-  /* line 405, main.scss */
-  header .copyright .col-1, section .copyright .col-1, footer .copyright .col-1 {
+
+  /* line 514, main.scss */
+  .col-2 {
+    width: 100%;
+  }
+
+  /* line 518, main.scss */
+  .copyright .col-1 {
     text-align: left;
   }
-  /* line 408, main.scss */
-  header .copyright #back-to-top, section .copyright #back-to-top, footer .copyright #back-to-top {
+
+  /* line 522, main.scss */
+  .copyright #back-to-top {
     width: 100%;
     margin: 20px 0 40px;
   }
-  /* line 413, main.scss */
-  header input, section input, footer input {
+
+  /* line 527, main.scss */
+  input {
     width: 100%;
   }
-  /* line 417, main.scss */
-  header .register-scroll, section .register-scroll, footer .register-scroll {
+
+  /* line 531, main.scss */
+  .register-scroll {
     float: left;
     width: 100%;
   }
-  /* line 422, main.scss */
-  header ol > li, section ol > li, footer ol > li {
+
+  /* line 536, main.scss */
+  ol > li {
     max-width: 100%;
     margin: 4px 0;
   }
 }
-@media (min-width: 600px) and (max-width: 1025px) {
+@media (min-width: 600px) and (max-width: 1000px) {
   /* big landscape tablets, laptops, and desktops */
-  /* line 432, main.scss */
+  /* line 546, main.scss */
   header .col-3, section .col-3, footer .col-3 {
-    width: 100%;
+    width: 50%;
   }
-  /* line 436, main.scss */
+  /* line 550, main.scss */
   header .footer-contact-col, section .footer-contact-col, footer .footer-contact-col {
     width: 100%;
   }
@@ -471,7 +602,7 @@ i {
 /*
  * Hide visually and from screen readers
  */
-/* line 485, main.scss */
+/* line 599, main.scss */
 .hidden {
   display: none !important;
 }
@@ -480,7 +611,7 @@ i {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 494, main.scss */
+/* line 608, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -497,7 +628,7 @@ i {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 512, main.scss */
+/* line 626, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -511,7 +642,7 @@ i {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 525, main.scss */
+/* line 639, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -527,7 +658,7 @@ i {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 542, main.scss */
+/* line 656, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -536,7 +667,7 @@ i {
   /* 2 */
 }
 
-/* line 547, main.scss */
+/* line 661, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -547,7 +678,7 @@ i {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 563, main.scss */
+  /* line 677, main.scss */
   *,
   *:before,
   *:after,
@@ -561,18 +692,18 @@ i {
     text-shadow: none !important;
   }
 
-  /* line 572, main.scss */
+  /* line 686, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 576, main.scss */
+  /* line 690, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 580, main.scss */
+  /* line 694, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -581,13 +712,13 @@ i {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 590, main.scss */
+  /* line 704, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 595, main.scss */
+  /* line 709, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -598,23 +729,23 @@ i {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 605, main.scss */
+  /* line 719, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 610, main.scss */
+  /* line 724, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 614, main.scss */
+  /* line 728, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 620, main.scss */
+  /* line 734, main.scss */
   p,
   h2,
   h3 {
@@ -622,7 +753,7 @@ i {
     widows: 3;
   }
 
-  /* line 626, main.scss */
+  /* line 740, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
