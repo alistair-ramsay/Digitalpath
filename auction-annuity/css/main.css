@@ -182,7 +182,7 @@ header, section, footer {
 }
 /* line 175, main.scss */
 .col-3 img {
-  width: 65%;
+  width: 50%;
   max-width: 200px;
 }
 
