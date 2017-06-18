@@ -580,15 +580,16 @@ i {
   /* line 532, main.scss */
   input {
     width: 100%;
+    padding: 0.2em 0;
   }
 
-  /* line 536, main.scss */
+  /* line 537, main.scss */
   .register-scroll {
     float: left;
     width: 100%;
   }
 
-  /* line 541, main.scss */
+  /* line 542, main.scss */
   ol > li {
     max-width: 100%;
     margin: 4px 0;
@@ -596,11 +597,11 @@ i {
 }
 @media (min-width: 600px) and (max-width: 1000px) {
   /* big landscape tablets, laptops, and desktops */
-  /* line 551, main.scss */
+  /* line 552, main.scss */
   header .col-3, section .col-3, footer .col-3 {
     width: 50%;
   }
-  /* line 555, main.scss */
+  /* line 556, main.scss */
   header .footer-contact-col, section .footer-contact-col, footer .footer-contact-col {
     width: 100%;
   }
@@ -618,7 +619,7 @@ i {
 /*
  * Hide visually and from screen readers
  */
-/* line 604, main.scss */
+/* line 605, main.scss */
 .hidden {
   display: none !important;
 }
@@ -627,7 +628,7 @@ i {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 613, main.scss */
+/* line 614, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -644,7 +645,7 @@ i {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 631, main.scss */
+/* line 632, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -658,7 +659,7 @@ i {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 644, main.scss */
+/* line 645, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -674,7 +675,7 @@ i {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 661, main.scss */
+/* line 662, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -683,7 +684,7 @@ i {
   /* 2 */
 }
 
-/* line 666, main.scss */
+/* line 667, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -694,7 +695,7 @@ i {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 682, main.scss */
+  /* line 683, main.scss */
   *,
   *:before,
   *:after,
@@ -708,18 +709,18 @@ i {
     text-shadow: none !important;
   }
 
-  /* line 691, main.scss */
+  /* line 692, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 695, main.scss */
+  /* line 696, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 699, main.scss */
+  /* line 700, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -728,13 +729,13 @@ i {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 709, main.scss */
+  /* line 710, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 714, main.scss */
+  /* line 715, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -745,23 +746,23 @@ i {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 724, main.scss */
+  /* line 725, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 729, main.scss */
+  /* line 730, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 733, main.scss */
+  /* line 734, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 739, main.scss */
+  /* line 740, main.scss */
   p,
   h2,
   h3 {
@@ -769,7 +770,7 @@ i {
     widows: 3;
   }
 
-  /* line 745, main.scss */
+  /* line 746, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
