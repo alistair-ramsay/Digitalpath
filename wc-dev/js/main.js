@@ -9,14 +9,19 @@ $(document).ready(function() {
     	$('html, body').animate({scrollTop: $("header").offset().top}, 800, 'easeOutCubic');
     });
     
-    $(".sub-menu-button, .sub-menu").hover(
-		function() {
-			$(".sub-menu").addClass("sub-menu-hover");
-  		}, function() {
-  			$(".sub-menu").removeClass("sub-menu-hover");
-  		}
-    );
     
+    if ($(window).width() > 680){
+	
+		$(".sub-menu-button, .sub-menu").hover(
+			function() {
+				$(".sub-menu").addClass("sub-menu-hover");
+	  		}, function() {
+	  			$(".sub-menu").removeClass("sub-menu-hover");
+	  		}
+	    );
+
+	}
+        
     $(".sub-menu-button").click(function() {
 			$(".sub-menu").toggleClass("sub-menu-clicked");
 			$(this).toggleClass("sub-menu-button-clicked");
