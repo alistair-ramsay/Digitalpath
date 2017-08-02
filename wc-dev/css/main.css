@@ -342,6 +342,10 @@ footer .copyright {
   margin-top: 5.3em;
   font-size: 78%;
 }
+/* line 349, main.scss */
+footer svg {
+  margin-top: 0;
+}
 
 /* =============================
    Media Queries
@@ -350,27 +354,27 @@ footer .copyright {
    Mobile
    ----------------------------- */
 @media only screen and (max-width: 680px) {
-  /* line 363, main.scss */
+  /* line 367, main.scss */
   .desktop-hide {
     display: block;
   }
 
-  /* line 367, main.scss */
+  /* line 371, main.scss */
   .mobile-hide {
     display: none;
   }
 
-  /* line 371, main.scss */
+  /* line 375, main.scss */
   header {
     position: relative;
     text-align: center;
     height: 80px;
   }
-  /* line 376, main.scss */
+  /* line 380, main.scss */
   header .padding {
     padding: 0;
   }
-  /* line 380, main.scss */
+  /* line 384, main.scss */
   header menu {
     margin: 80px 0 0;
     padding: 0 0 30px;
@@ -378,13 +382,13 @@ footer .copyright {
     background: #460d2d;
     width: 100%;
   }
-  /* line 388, main.scss */
+  /* line 392, main.scss */
   header ul {
     margin: 0;
     padding: 0;
     height: auto;
   }
-  /* line 394, main.scss */
+  /* line 398, main.scss */
   header li {
     display: block;
     margin-right: 0;
@@ -393,19 +397,19 @@ footer .copyright {
     border-bottom: 0px solid;
     padding: 5px 0;
   }
-  /* line 403, main.scss */
+  /* line 407, main.scss */
   header li.active a {
     color: #d3d930;
   }
-  /* line 407, main.scss */
+  /* line 411, main.scss */
   header .sub-menu-parent {
     position: relative;
   }
-  /* line 410, main.scss */
+  /* line 414, main.scss */
   header .sub-menu-parent li {
     background: #681c47;
   }
-  /* line 415, main.scss */
+  /* line 419, main.scss */
   header .sub-menu-container {
     position: relative;
     width: auto;
@@ -414,12 +418,12 @@ footer .copyright {
     left: auto;
     top: auto;
   }
-  /* line 424, main.scss */
+  /* line 428, main.scss */
   header .sub-menu-button {
     height: auto;
     border-bottom: 0px solid #a38686;
   }
-  /* line 429, main.scss */
+  /* line 433, main.scss */
   header .sub-menu {
     background: #460d2d;
     text-align: center;
@@ -430,7 +434,7 @@ footer .copyright {
     top: auto;
     display: none;
   }
-  /* line 439, main.scss */
+  /* line 443, main.scss */
   header .sub-menu li {
     display: block;
     margin: 5px 0;
@@ -438,23 +442,23 @@ footer .copyright {
     height: auto;
     border-bottom: 0;
   }
-  /* line 448, main.scss */
+  /* line 452, main.scss */
   header .sub-menu-hover {
     top: 0;
   }
-  /* line 452, main.scss */
+  /* line 456, main.scss */
   header .sub-menu-clicked {
     display: block;
   }
-  /* line 456, main.scss */
+  /* line 460, main.scss */
   header .sub-menu-button-clicked {
     color: white;
   }
-  /* line 460, main.scss */
+  /* line 464, main.scss */
   header .social-icons {
     display: none;
   }
-  /* line 464, main.scss */
+  /* line 468, main.scss */
   header .menu-button {
     float: right;
     line-height: 80px;
@@ -463,7 +467,7 @@ footer .copyright {
     transition: color .3s;
     -webkit-transition: color .3s;
   }
-  /* line 472, main.scss */
+  /* line 476, main.scss */
   header .menu-button svg {
     fill: white;
     transition: fill .3s;
@@ -472,29 +476,29 @@ footer .copyright {
     margin-left: 10px;
     margin-top: -2px;
   }
-  /* line 482, main.scss */
+  /* line 486, main.scss */
   header .menu-button:hover {
     color: white;
   }
-  /* line 485, main.scss */
+  /* line 489, main.scss */
   header .menu-button:hover svg {
     fill: white;
   }
 
-  /* line 493, main.scss */
+  /* line 497, main.scss */
   .col-3 {
     width: 100%;
   }
 
-  /* line 497, main.scss */
+  /* line 501, main.scss */
   footer {
     margin: 40px 0;
   }
-  /* line 500, main.scss */
+  /* line 504, main.scss */
   footer .col-3 {
     padding: 0;
   }
-  /* line 504, main.scss */
+  /* line 508, main.scss */
   footer .copyright {
     margin-top: 40px;
   }
@@ -505,7 +509,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers
  */
-/* line 522, main.scss */
+/* line 528, main.scss */
 .hidden {
   display: none !important;
 }
@@ -514,7 +518,7 @@ footer .copyright {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 531, main.scss */
+/* line 537, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -531,7 +535,7 @@ footer .copyright {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 549, main.scss */
+/* line 555, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -545,7 +549,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 562, main.scss */
+/* line 568, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -561,7 +565,7 @@ footer .copyright {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 579, main.scss */
+/* line 585, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -570,7 +574,7 @@ footer .copyright {
   /* 2 */
 }
 
-/* line 584, main.scss */
+/* line 590, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -592,7 +596,7 @@ footer .copyright {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 616, main.scss */
+  /* line 622, main.scss */
   *,
   *:before,
   *:after,
@@ -606,18 +610,18 @@ footer .copyright {
     text-shadow: none !important;
   }
 
-  /* line 625, main.scss */
+  /* line 631, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 629, main.scss */
+  /* line 635, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 633, main.scss */
+  /* line 639, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -626,13 +630,13 @@ footer .copyright {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 643, main.scss */
+  /* line 649, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 648, main.scss */
+  /* line 654, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -643,23 +647,23 @@ footer .copyright {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 658, main.scss */
+  /* line 664, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 663, main.scss */
+  /* line 669, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 667, main.scss */
+  /* line 673, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 673, main.scss */
+  /* line 679, main.scss */
   p,
   h2,
   h3 {
@@ -667,7 +671,7 @@ footer .copyright {
     widows: 3;
   }
 
-  /* line 679, main.scss */
+  /* line 685, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
