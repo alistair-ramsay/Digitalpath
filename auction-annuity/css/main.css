@@ -1,0 +1,778 @@
+/* HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, main.scss */
+html {
+  color: #002849;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 28, main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 33, main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 42, main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+/* line 62, main.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 70, main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 80, main.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+/* line 88, main.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 104, main.scss */
+.mobile-only {
+  display: none;
+}
+
+/* line 108, main.scss */
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 112, main.scss */
+h1 {
+  font-size: 175%;
+}
+
+/* line 116, main.scss */
+h2, h3 {
+  font-size: 125%;
+}
+
+/* line 120, main.scss */
+p {
+  margin: 20px 0;
+}
+
+/* line 124, main.scss */
+a {
+  color: #0dd1ff;
+}
+
+/* line 128, main.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 132, main.scss */
+header, section, footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+/* line 138, main.scss */
+.logo {
+  width: 10em;
+}
+
+/* line 142, main.scss */
+.section-padding {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 148, main.scss */
+.padding {
+  padding: 20px;
+}
+
+/* line 152, main.scss */
+.side-padding {
+  padding: 0 20px;
+}
+
+/* line 156, main.scss */
+.col-1 {
+  width: 100%;
+  text-align: left;
+}
+
+/* line 161, main.scss */
+.col-1.stages {
+  text-align: center;
+}
+
+/* line 165, main.scss */
+.col-3 {
+  width: 33.3%;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+}
+/* line 171, main.scss */
+.col-3 h2 {
+  text-align: left;
+}
+/* line 175, main.scss */
+.col-3 img {
+  width: 50%;
+  max-width: 200px;
+}
+
+/* line 181, main.scss */
+.col-2 {
+  width: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+
+/* line 189, main.scss */
+#intro {
+  text-align: center;
+  background: #b2f1ff url("../img/hero.jpg") no-repeat;
+  background-position: 33.3%;
+  background-size: cover;
+  margin: 15px 0 0;
+}
+/* line 196, main.scss */
+#intro .side-padding {
+  position: relative;
+}
+/* line 200, main.scss */
+#intro .copy {
+  padding: 20px 0;
+  width: 50%;
+}
+/* line 205, main.scss */
+#intro img {
+  width: 100%;
+}
+/* line 210, main.scss */
+#intro .section-padding {
+  padding: 0 20px;
+}
+/* line 214, main.scss */
+#intro .intro-shape-left {
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid white;
+}
+/* line 219, main.scss */
+#intro .intro-shape-right {
+  border-left: 30px solid transparent;
+  border-bottom: 30px solid white;
+}
+
+/* line 225, main.scss */
+#form {
+  background: #deecf7;
+  padding: 10px 0 50px;
+  margin-top: 100px;
+}
+
+/* line 231, main.scss */
+label {
+  display: block;
+  margin: 1em 0 0.5em;
+}
+
+/* line 236, main.scss */
+input {
+  border: 1px solid #002849;
+  height: 1.5em;
+  width: 100%;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 245, main.scss */
+input#age {
+  width: 6em;
+}
+
+/* line 249, main.scss */
+#income-to-sell {
+  display: inline-block;
+}
+
+/* line 253, main.scss */
+#income-to-sell input {
+  border: 0;
+  display: inline-block;
+  float: left;
+  height: 1.5em;
+  border-top: 1px solid #002849;
+  border-bottom: 1px solid #002849;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 3px 0;
+  width: 6em;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+/* line 269, main.scss */
+#currency, #per-year {
+  display: inline-block;
+  float: left;
+  height: 1.5em;
+  line-height: 1.5em;
+  padding: 3px 6px;
+}
+
+/* line 277, main.scss */
+#currency {
+  border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  border: 1px solid #002849;
+}
+
+/* line 284, main.scss */
+#per-year {
+  border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  border: 1px solid #002849;
+}
+
+/* line 291, main.scss */
+.button {
+  margin: 2em 0 0.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0;
+  border: 0;
+  color: white;
+  background: #002849;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  cursor: pointer;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  text-align: center;
+}
+
+/* line 310, main.scss */
+.button:hover {
+  color: #0dd1ff;
+  background: #005396;
+}
+
+/* line 315, main.scss */
+.register-scroll {
+  float: right;
+  margin-top: 15px;
+  width: 20em;
+}
+
+/* line 321, main.scss */
+.stages-header {
+  margin: 100px 0 40px;
+}
+
+/* line 325, main.scss */
+ol {
+  counter-reset: li;
+  /* Initiate a counter */
+  margin-left: 0;
+  /* Remove the default left margin */
+  padding-left: 0;
+  /* Remove the default left padding */
+}
+
+/* line 331, main.scss */
+ol > li {
+  position: relative;
+  /* Create a positioning context */
+  list-style: none;
+  /* Disable the normal item numbering */
+  max-width: 75%;
+  margin: 4px auto;
+  background: #deecf7;
+  padding-top: 40px;
+}
+
+/* line 340, main.scss */
+ol > li.second-bg {
+  background: #c0d7ea;
+}
+
+/* line 344, main.scss */
+ol > li:before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  /* Position and style the number */
+  font-size: 2em;
+  line-height: 50px;
+  color: white;
+  margin-top: 20px;
+  font-family: 'Roboto Slab', serif;
+  z-index: 1;
+  position: relative;
+}
+
+/* line 361, main.scss */
+.circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #002849;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -25px;
+}
+
+/* line 374, main.scss */
+ol > li h3 {
+  margin-top: 0;
+}
+
+/* line 378, main.scss */
+.arrow-down {
+  border: 4px solid white;
+  width: 50px;
+  height: 50px;
+  background: #deecf7;
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+  position: absolute;
+  top: -49px;
+}
+
+/* line 390, main.scss */
+.arrow-down.colour-2 {
+  background: #c0d7ea;
+}
+
+/* line 394, main.scss */
+.arrow-down-mask {
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 58px;
+  margin-left: -29px;
+  z-index: 1;
+}
+
+/* line 405, main.scss */
+footer {
+  font-size: small;
+  border-top: 4px solid #c0d7ea;
+  margin-top: 20px;
+}
+/* line 410, main.scss */
+footer .col-2 {
+  padding-bottom: 15px;
+}
+/* line 414, main.scss */
+footer p {
+  margin: 10px 0;
+}
+
+/* line 419, main.scss */
+.footer-2 {
+  background: #002849;
+  color: white;
+}
+
+/* line 424, main.scss */
+.footer-contact-col p {
+  margin-top: 0;
+}
+
+/* line 428, main.scss */
+.copyright .col-1 {
+  text-align: center;
+}
+
+/* line 432, main.scss */
+#back-to-top {
+  cursor: pointer;
+  float: right;
+}
+
+/* line 437, main.scss */
+i {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-left: 0.5em;
+}
+
+/* line 445, main.scss */
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+@media (max-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops and desktops */
+  /* line 463, main.scss */
+  .register-scroll {
+    width: 15em;
+  }
+
+  /* line 467, main.scss */
+  #intro {
+    background-position: 50%;
+  }
+}
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  /* line 477, main.scss */
+  .mobile-only {
+    display: block;
+  }
+
+  /* line 481, main.scss */
+  .desktop-only {
+    display: none;
+  }
+
+  /* line 485, main.scss */
+  .side-padding {
+    padding: 0;
+  }
+
+  /* line 489, main.scss */
+  h1 {
+    font-size: 150%;
+  }
+
+  /* line 493, main.scss */
+  h2 {
+    font-size: 100%;
+  }
+
+  /* line 497, main.scss */
+  h3 {
+    font-size: 100%;
+  }
+
+  /* line 501, main.scss */
+  .intro-shape-left, .intro-shape-right {
+    display: none;
+  }
+
+  /* line 505, main.scss */
+  #intro .copy {
+    width: 100%;
+  }
+
+  /* line 509, main.scss */
+  #intro {
+    background-position: 32%;
+    padding-bottom: 40px;
+  }
+
+  /* line 515, main.scss */
+  .col-3 {
+    width: 100%;
+  }
+
+  /* line 519, main.scss */
+  .col-2 {
+    width: 100%;
+  }
+
+  /* line 523, main.scss */
+  .copyright .col-1 {
+    text-align: left;
+  }
+
+  /* line 527, main.scss */
+  .copyright #back-to-top {
+    width: 100%;
+    margin: 20px 0 40px;
+  }
+
+  /* line 532, main.scss */
+  input {
+    width: 100%;
+    padding: 0.2em 0;
+  }
+
+  /* line 537, main.scss */
+  .register-scroll {
+    float: left;
+    width: 100%;
+  }
+
+  /* line 542, main.scss */
+  ol > li {
+    max-width: 100%;
+    margin: 4px 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  /* big landscape tablets, laptops, and desktops */
+  /* line 552, main.scss */
+  header .col-3, section .col-3, footer .col-3 {
+    width: 50%;
+  }
+  /* line 556, main.scss */
+  header .footer-contact-col, section .footer-contact-col, footer .footer-contact-col {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (max-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+/* @2x test */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+/* line 605, main.scss */
+.hidden {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+/* line 614, main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+/* line 632, main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+/* line 645, main.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 662, main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 667, main.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  /* line 683, main.scss */
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+       http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 692, main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 696, main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 700, main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  /* line 710, main.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 715, main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  /* line 725, main.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 730, main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 734, main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 740, main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 746, main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,11 @@
+.arrow-down-mask {
+	display: none;
+}
+
+.circle {
+	display: none;
+}
+
+ol > li:before {
+	color: #222;
+}
