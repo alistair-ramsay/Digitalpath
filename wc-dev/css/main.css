@@ -474,11 +474,11 @@ footer .copyright {
   }
   /* line 482, main.scss */
   header .menu-button:hover {
-    color: #00a79d;
+    color: white;
   }
   /* line 485, main.scss */
   header .menu-button:hover svg {
-    fill: #00a79d;
+    fill: white;
   }
 
   /* line 493, main.scss */

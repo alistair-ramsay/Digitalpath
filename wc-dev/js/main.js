@@ -9,18 +9,17 @@ $(document).ready(function() {
     	$('html, body').animate({scrollTop: $("header").offset().top}, 800, 'easeOutCubic');
     });
     
-    
-    if ($(window).width() > 680){
-	
-		$(".sub-menu-button, .sub-menu").hover(
-			function() {
-				$(".sub-menu").addClass("sub-menu-hover");
-	  		}, function() {
-	  			$(".sub-menu").removeClass("sub-menu-hover");
-	  		}
-	    );
 
-	}
+	
+	$(".sub-menu-button, .sub-menu").hover(
+		function() {
+			$(".sub-menu").addClass("sub-menu-hover");
+		}, function() {
+			$(".sub-menu").removeClass("sub-menu-hover");
+		}
+	);
+
+
         
     $(".sub-menu-button").click(function() {
 			$(".sub-menu").toggleClass("sub-menu-clicked");
