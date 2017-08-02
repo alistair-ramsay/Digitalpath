@@ -111,73 +111,75 @@ html {
 /* line 121, main.scss */
 .logo-sm {
   width: 120px;
+  height: 26.4375px;
 }
 
-/* line 125, main.scss */
+/* line 126, main.scss */
 .icon {
   width: 22px;
+  height: 22px;
 }
 
-/* line 129, main.scss */
+/* line 131, main.scss */
 header, footer {
   float: left;
   width: 100%;
   color: white;
 }
-/* line 134, main.scss */
+/* line 136, main.scss */
 header a, footer a {
   color: white;
   transition: color .3s;
   -webkit-transition: color .3s;
   text-decoration: none;
 }
-/* line 141, main.scss */
+/* line 143, main.scss */
 header a:hover, footer a:hover {
   color: #00a79d;
 }
-/* line 145, main.scss */
+/* line 147, main.scss */
 header a svg, footer a svg {
   fill: white;
   transition: fill .3s;
   -webkit-transition: fill .3s;
 }
-/* line 151, main.scss */
+/* line 153, main.scss */
 header a:hover svg, footer a:hover svg {
   fill: #00a79d;
 }
 
-/* line 157, main.scss */
+/* line 159, main.scss */
 header {
   position: relative;
   text-align: center;
   height: 80px;
 }
-/* line 162, main.scss */
+/* line 164, main.scss */
 header menu {
   margin-top: -20px;
 }
-/* line 166, main.scss */
+/* line 168, main.scss */
 header ul {
   margin: 0;
   padding: 0;
   height: 80px;
 }
-/* line 172, main.scss */
+/* line 174, main.scss */
 header li {
   display: inline-block;
   margin-right: 20px;
   height: 80px;
   line-height: 80px;
 }
-/* line 179, main.scss */
+/* line 181, main.scss */
 header li.active a {
   color: #d3d930;
 }
-/* line 183, main.scss */
+/* line 185, main.scss */
 header .sub-menu-parent {
   position: relative;
 }
-/* line 187, main.scss */
+/* line 189, main.scss */
 header .sub-menu-container {
   position: absolute;
   left: -40px;
@@ -186,11 +188,11 @@ header .sub-menu-container {
   height: 400px;
   overflow: hidden;
 }
-/* line 196, main.scss */
+/* line 198, main.scss */
 header .sub-menu-button {
   height: 80px;
 }
-/* line 201, main.scss */
+/* line 203, main.scss */
 header .sub-menu {
   background: #460d2d;
   text-align: left;
@@ -202,52 +204,52 @@ header .sub-menu {
   position: absolute;
   top: -200px;
 }
-/* line 212, main.scss */
+/* line 214, main.scss */
 header .sub-menu li {
   display: block;
   margin-right: 40px;
   line-height: 1.9em;
   height: auto;
 }
-/* line 220, main.scss */
+/* line 222, main.scss */
 header .sub-menu-hover {
   top: 0;
 }
-/* line 224, main.scss */
+/* line 226, main.scss */
 header .social-icons {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 229, main.scss */
+/* line 231, main.scss */
 header .social-icons a {
   margin-right: 10px;
   float: left;
 }
-/* line 235, main.scss */
+/* line 237, main.scss */
 header .header-logo {
   position: absolute;
   top: 17px;
   left: 20px;
 }
 
-/* line 242, main.scss */
+/* line 244, main.scss */
 li {
   color: white;
   list-style-type: none;
 }
 
-/* line 247, main.scss */
+/* line 249, main.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 251, main.scss */
+/* line 253, main.scss */
 .column-1 {
   max-width: 1200px;
 }
 
-/* line 255, main.scss */
+/* line 257, main.scss */
 body {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -256,18 +258,18 @@ body {
   font-size: 160%;
 }
 
-/* line 263, main.scss */
+/* line 265, main.scss */
 h1 {
   font-weight: 700;
 }
 
-/* line 267, main.scss */
+/* line 269, main.scss */
 li {
   color: white;
   list-style-type: none;
 }
 
-/* line 272, main.scss */
+/* line 274, main.scss */
 #main {
   width: 100%;
   background: white;
@@ -275,45 +277,45 @@ li {
   float: left;
 }
 
-/* line 279, main.scss */
+/* line 281, main.scss */
 .content {
   max-width: 1200px;
   text-align: left;
   margin: 0 auto;
 }
 
-/* line 285, main.scss */
+/* line 287, main.scss */
 .col-3 {
   width: 33.333%;
   float: left;
   display: inline;
 }
 
-/* line 293, main.scss */
+/* line 295, main.scss */
 footer .col-3 {
   padding: 20px 0 20px;
 }
-/* line 297, main.scss */
+/* line 299, main.scss */
 footer a {
   color: #00a79d;
 }
-/* line 301, main.scss */
+/* line 303, main.scss */
 footer a:hover {
   color: #c5eae6;
 }
-/* line 307, main.scss */
+/* line 309, main.scss */
 footer .social-icons a {
   margin-right: 15px;
   margin-bottom: 15px;
   float: left;
 }
-/* line 314, main.scss */
+/* line 316, main.scss */
 footer .btt-icon {
   margin-right: 15px;
   margin-bottom: 15px;
   float: left;
 }
-/* line 320, main.scss */
+/* line 322, main.scss */
 footer .back-to-top {
   cursor: pointer;
   transition: color .3s;
@@ -321,11 +323,11 @@ footer .back-to-top {
   color: #00a79d;
   line-height: 1.8em;
 }
-/* line 328, main.scss */
+/* line 330, main.scss */
 footer .back-to-top:hover {
   color: #c5eae6;
 }
-/* line 332, main.scss */
+/* line 334, main.scss */
 footer .icon {
   width: 37px;
   height: 37px;
@@ -334,11 +336,11 @@ footer .icon {
   transition: fill .3s;
   -webkit-transition: fill .3s;
 }
-/* line 341, main.scss */
+/* line 343, main.scss */
 footer .icon:hover {
   fill: #c5eae6;
 }
-/* line 345, main.scss */
+/* line 347, main.scss */
 footer .copyright {
   margin-top: 5.3em;
   font-size: 78%;
@@ -351,27 +353,27 @@ footer .copyright {
    Mobile
    ----------------------------- */
 @media only screen and (max-width: 680px) {
-  /* line 364, main.scss */
+  /* line 366, main.scss */
   .desktop-hide {
     display: block;
   }
 
-  /* line 368, main.scss */
+  /* line 370, main.scss */
   .mobile-hide {
     display: none;
   }
 
-  /* line 372, main.scss */
+  /* line 374, main.scss */
   header {
     position: relative;
     text-align: center;
     height: 80px;
   }
-  /* line 377, main.scss */
+  /* line 379, main.scss */
   header .padding {
     padding: 0;
   }
-  /* line 381, main.scss */
+  /* line 383, main.scss */
   header menu {
     margin: 80px 0 0;
     padding: 0 0 30px;
@@ -379,13 +381,13 @@ footer .copyright {
     background: #460d2d;
     width: 100%;
   }
-  /* line 389, main.scss */
+  /* line 391, main.scss */
   header ul {
     margin: 0;
     padding: 0;
     height: auto;
   }
-  /* line 395, main.scss */
+  /* line 397, main.scss */
   header li {
     display: block;
     margin-right: 0;
@@ -394,19 +396,19 @@ footer .copyright {
     border-bottom: 0px solid;
     padding: 5px 0;
   }
-  /* line 404, main.scss */
+  /* line 406, main.scss */
   header li.active a {
     color: #d3d930;
   }
-  /* line 408, main.scss */
+  /* line 410, main.scss */
   header .sub-menu-parent {
     position: relative;
   }
-  /* line 411, main.scss */
+  /* line 413, main.scss */
   header .sub-menu-parent li {
     background: #681c47;
   }
-  /* line 416, main.scss */
+  /* line 418, main.scss */
   header .sub-menu-container {
     position: relative;
     width: auto;
@@ -415,12 +417,12 @@ footer .copyright {
     left: auto;
     top: auto;
   }
-  /* line 425, main.scss */
+  /* line 427, main.scss */
   header .sub-menu-button {
     height: auto;
     border-bottom: 0px solid #a38686;
   }
-  /* line 430, main.scss */
+  /* line 432, main.scss */
   header .sub-menu {
     background: #460d2d;
     text-align: center;
@@ -431,7 +433,7 @@ footer .copyright {
     top: auto;
     display: none;
   }
-  /* line 440, main.scss */
+  /* line 442, main.scss */
   header .sub-menu li {
     display: block;
     margin: 5px 0;
@@ -439,23 +441,23 @@ footer .copyright {
     height: auto;
     border-bottom: 0;
   }
-  /* line 449, main.scss */
+  /* line 451, main.scss */
   header .sub-menu-hover {
     top: 0;
   }
-  /* line 453, main.scss */
+  /* line 455, main.scss */
   header .sub-menu-clicked {
     display: block;
   }
-  /* line 457, main.scss */
+  /* line 459, main.scss */
   header .sub-menu-button-clicked {
     color: white;
   }
-  /* line 461, main.scss */
+  /* line 463, main.scss */
   header .social-icons {
     display: none;
   }
-  /* line 465, main.scss */
+  /* line 467, main.scss */
   header .menu-button {
     float: right;
     line-height: 80px;
@@ -464,7 +466,7 @@ footer .copyright {
     transition: color .3s;
     -webkit-transition: color .3s;
   }
-  /* line 473, main.scss */
+  /* line 475, main.scss */
   header .menu-button svg {
     fill: white;
     transition: fill .3s;
@@ -473,29 +475,29 @@ footer .copyright {
     margin-left: 10px;
     margin-top: -2px;
   }
-  /* line 483, main.scss */
+  /* line 485, main.scss */
   header .menu-button:hover {
     color: white;
   }
-  /* line 486, main.scss */
+  /* line 488, main.scss */
   header .menu-button:hover svg {
     fill: white;
   }
 
-  /* line 494, main.scss */
+  /* line 496, main.scss */
   .col-3 {
     width: 100%;
   }
 
-  /* line 498, main.scss */
+  /* line 500, main.scss */
   footer {
     margin: 40px 0;
   }
-  /* line 501, main.scss */
+  /* line 503, main.scss */
   footer .col-3 {
     padding: 0;
   }
-  /* line 505, main.scss */
+  /* line 507, main.scss */
   footer .copyright {
     margin-top: 40px;
   }
@@ -506,7 +508,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers
  */
-/* line 525, main.scss */
+/* line 527, main.scss */
 .hidden {
   display: none !important;
 }
@@ -515,7 +517,7 @@ footer .copyright {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 534, main.scss */
+/* line 536, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -532,7 +534,7 @@ footer .copyright {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 552, main.scss */
+/* line 554, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -546,7 +548,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 565, main.scss */
+/* line 567, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -562,7 +564,7 @@ footer .copyright {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 582, main.scss */
+/* line 584, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -571,7 +573,7 @@ footer .copyright {
   /* 2 */
 }
 
-/* line 587, main.scss */
+/* line 589, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -593,7 +595,7 @@ footer .copyright {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 619, main.scss */
+  /* line 621, main.scss */
   *,
   *:before,
   *:after,
@@ -607,18 +609,18 @@ footer .copyright {
     text-shadow: none !important;
   }
 
-  /* line 628, main.scss */
+  /* line 630, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 632, main.scss */
+  /* line 634, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 636, main.scss */
+  /* line 638, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -627,13 +629,13 @@ footer .copyright {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 646, main.scss */
+  /* line 648, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 651, main.scss */
+  /* line 653, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -644,23 +646,23 @@ footer .copyright {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 661, main.scss */
+  /* line 663, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 666, main.scss */
+  /* line 668, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 670, main.scss */
+  /* line 672, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 676, main.scss */
+  /* line 678, main.scss */
   p,
   h2,
   h3 {
@@ -668,7 +670,7 @@ footer .copyright {
     widows: 3;
   }
 
-  /* line 682, main.scss */
+  /* line 684, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
