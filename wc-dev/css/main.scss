@@ -331,6 +331,8 @@ footer {
 	
 	.icon {
 		width: 37px;
+		height: 37px;
+		float: left;
 		fill: $brand-col-turquoise;
 		transition: fill .3s;
 		-webkit-transition: fill .3s;
@@ -343,13 +345,6 @@ footer {
 	.copyright {
 		margin-top: 5.3em;
 		font-size: 78%;
-	}
-	
-	svg {
-		margin-top: 0;
-		padding-top: 0;
-		display: inline-block;
-		vertical-align:top;
 	}
 	
 }
