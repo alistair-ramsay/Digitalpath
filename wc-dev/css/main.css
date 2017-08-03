@@ -104,82 +104,120 @@ html {
 }
 
 /* line 117, main.scss */
+h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1em;
+  font-size: 150%;
+}
+
+/* line 125, main.scss */
+h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1em;
+  font-size: 150%;
+}
+
+/* line 133, main.scss */
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+/* line 139, main.scss */
+a {
+  color: #961e63;
+  transition: color .3s;
+  -webkit-transition: color .3s;
+  text-decoration: none;
+}
+
+/* line 146, main.scss */
+a:hover {
+  color: #00a79d;
+}
+
+/* line 150, main.scss */
 .white-fill {
   fill: white;
 }
 
-/* line 121, main.scss */
+/* line 154, main.scss */
 .logo-sm {
   width: 120px;
   height: 26.4375px;
 }
 
-/* line 126, main.scss */
+/* line 159, main.scss */
 .icon {
   width: 22px;
   height: 22px;
 }
 
-/* line 131, main.scss */
+/* line 164, main.scss */
 header, footer {
   float: left;
   width: 100%;
   color: white;
 }
-/* line 136, main.scss */
+/* line 169, main.scss */
 header a, footer a {
   color: white;
   transition: color .3s;
   -webkit-transition: color .3s;
   text-decoration: none;
 }
-/* line 143, main.scss */
+/* line 176, main.scss */
 header a:hover, footer a:hover {
   color: #00a79d;
 }
-/* line 147, main.scss */
+/* line 180, main.scss */
 header a svg, footer a svg {
   fill: white;
   transition: fill .3s;
   -webkit-transition: fill .3s;
 }
-/* line 153, main.scss */
+/* line 186, main.scss */
 header a:hover svg, footer a:hover svg {
   fill: #00a79d;
 }
 
-/* line 159, main.scss */
+/* line 192, main.scss */
 header {
   position: relative;
   text-align: center;
   height: 80px;
 }
-/* line 164, main.scss */
+/* line 197, main.scss */
 header menu {
   margin-top: -20px;
 }
-/* line 168, main.scss */
+/* line 201, main.scss */
 header ul {
   margin: 0;
   padding: 0;
   height: 80px;
 }
-/* line 174, main.scss */
+/* line 207, main.scss */
 header li {
   display: inline-block;
   margin-right: 20px;
   height: 80px;
   line-height: 80px;
 }
-/* line 181, main.scss */
+/* line 214, main.scss */
 header li.active a {
   color: #d3d930;
 }
-/* line 185, main.scss */
+/* line 218, main.scss */
 header .sub-menu-parent {
   position: relative;
 }
-/* line 189, main.scss */
+/* line 222, main.scss */
 header .sub-menu-container {
   position: absolute;
   left: -40px;
@@ -188,11 +226,11 @@ header .sub-menu-container {
   height: 400px;
   overflow: hidden;
 }
-/* line 198, main.scss */
+/* line 231, main.scss */
 header .sub-menu-button {
   height: 80px;
 }
-/* line 203, main.scss */
+/* line 236, main.scss */
 header .sub-menu {
   background: #460d2d;
   text-align: left;
@@ -204,52 +242,52 @@ header .sub-menu {
   position: absolute;
   top: -200px;
 }
-/* line 214, main.scss */
+/* line 247, main.scss */
 header .sub-menu li {
   display: block;
   margin-right: 40px;
   line-height: 1.9em;
   height: auto;
 }
-/* line 222, main.scss */
+/* line 255, main.scss */
 header .sub-menu-hover {
   top: 0;
 }
-/* line 226, main.scss */
+/* line 259, main.scss */
 header .social-icons {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-/* line 231, main.scss */
+/* line 264, main.scss */
 header .social-icons a {
   margin-right: 10px;
   float: left;
 }
-/* line 237, main.scss */
+/* line 270, main.scss */
 header .header-logo {
   position: absolute;
   top: 17px;
   left: 20px;
 }
 
-/* line 244, main.scss */
+/* line 277, main.scss */
 li {
   color: white;
   list-style-type: none;
 }
 
-/* line 249, main.scss */
+/* line 282, main.scss */
 .padding {
   padding: 20px;
 }
 
-/* line 253, main.scss */
+/* line 286, main.scss */
 .column-1 {
   max-width: 1200px;
 }
 
-/* line 257, main.scss */
+/* line 290, main.scss */
 body {
   font-family: "proxima-nova", sans-serif;
   font-style: normal;
@@ -258,18 +296,13 @@ body {
   font-size: 160%;
 }
 
-/* line 265, main.scss */
-h1 {
-  font-weight: 700;
-}
-
-/* line 269, main.scss */
+/* line 298, main.scss */
 li {
   color: white;
   list-style-type: none;
 }
 
-/* line 274, main.scss */
+/* line 303, main.scss */
 #main {
   width: 100%;
   background: white;
@@ -277,45 +310,71 @@ li {
   float: left;
 }
 
-/* line 281, main.scss */
+/* line 310, main.scss */
 .content {
   max-width: 1200px;
   text-align: left;
   margin: 0 auto;
 }
 
-/* line 287, main.scss */
+/* line 316, main.scss */
 .col-3 {
   width: 33.333%;
   float: left;
   display: inline;
 }
 
-/* line 295, main.scss */
+/* line 322, main.scss */
+#blog-posts {
+  float: left;
+  width: 100%;
+  background: #961e63;
+  padding: 20px 0 40px 0;
+}
+/* line 328, main.scss */
+#blog-posts a {
+  color: white;
+}
+/* line 332, main.scss */
+#blog-posts a:hover {
+  color: #00a79d;
+}
+/* line 336, main.scss */
+#blog-posts .padding {
+  padding: 20px 20px 0;
+}
+
+/* line 342, main.scss */
+.blog-promo-header {
+  margin: 20px 20px 0;
+  color: #d3d930;
+}
+
+/* line 349, main.scss */
 footer .col-3 {
   padding: 20px 0 20px;
 }
-/* line 299, main.scss */
+/* line 353, main.scss */
 footer a {
   color: #00a79d;
 }
-/* line 303, main.scss */
+/* line 357, main.scss */
 footer a:hover {
   color: #c5eae6;
 }
-/* line 309, main.scss */
+/* line 363, main.scss */
 footer .social-icons a {
   margin-right: 15px;
   margin-bottom: 15px;
   float: left;
 }
-/* line 316, main.scss */
+/* line 370, main.scss */
 footer .btt-icon {
   margin-right: 15px;
   margin-bottom: 15px;
   float: left;
 }
-/* line 322, main.scss */
+/* line 376, main.scss */
 footer .back-to-top {
   cursor: pointer;
   transition: color .3s;
@@ -323,11 +382,11 @@ footer .back-to-top {
   color: #00a79d;
   line-height: 1.8em;
 }
-/* line 330, main.scss */
+/* line 384, main.scss */
 footer .back-to-top:hover {
   color: #c5eae6;
 }
-/* line 334, main.scss */
+/* line 388, main.scss */
 footer .icon {
   width: 37px;
   height: 37px;
@@ -336,11 +395,11 @@ footer .icon {
   transition: fill .3s;
   -webkit-transition: fill .3s;
 }
-/* line 343, main.scss */
+/* line 397, main.scss */
 footer .icon:hover {
   fill: #c5eae6;
 }
-/* line 347, main.scss */
+/* line 401, main.scss */
 footer .copyright {
   margin-top: 5.3em;
   font-size: 78%;
@@ -353,27 +412,27 @@ footer .copyright {
    Mobile
    ----------------------------- */
 @media only screen and (max-width: 680px) {
-  /* line 366, main.scss */
+  /* line 423, main.scss */
   .desktop-hide {
     display: block;
   }
 
-  /* line 370, main.scss */
+  /* line 427, main.scss */
   .mobile-hide {
     display: none;
   }
 
-  /* line 374, main.scss */
+  /* line 431, main.scss */
   header {
     position: relative;
     text-align: center;
     height: 80px;
   }
-  /* line 379, main.scss */
+  /* line 436, main.scss */
   header .padding {
     padding: 0;
   }
-  /* line 383, main.scss */
+  /* line 440, main.scss */
   header menu {
     margin: 80px 0 0;
     padding: 0 0 30px;
@@ -381,13 +440,13 @@ footer .copyright {
     background: #460d2d;
     width: 100%;
   }
-  /* line 391, main.scss */
+  /* line 448, main.scss */
   header ul {
     margin: 0;
     padding: 0;
     height: auto;
   }
-  /* line 397, main.scss */
+  /* line 454, main.scss */
   header li {
     display: block;
     margin-right: 0;
@@ -396,19 +455,19 @@ footer .copyright {
     border-bottom: 0px solid;
     padding: 5px 0;
   }
-  /* line 406, main.scss */
+  /* line 463, main.scss */
   header li.active a {
     color: #d3d930;
   }
-  /* line 410, main.scss */
+  /* line 467, main.scss */
   header .sub-menu-parent {
     position: relative;
   }
-  /* line 413, main.scss */
+  /* line 470, main.scss */
   header .sub-menu-parent li {
     background: #681c47;
   }
-  /* line 418, main.scss */
+  /* line 475, main.scss */
   header .sub-menu-container {
     position: relative;
     width: auto;
@@ -417,12 +476,12 @@ footer .copyright {
     left: auto;
     top: auto;
   }
-  /* line 427, main.scss */
+  /* line 484, main.scss */
   header .sub-menu-button {
     height: auto;
     border-bottom: 0px solid #a38686;
   }
-  /* line 432, main.scss */
+  /* line 489, main.scss */
   header .sub-menu {
     background: #460d2d;
     text-align: center;
@@ -433,7 +492,7 @@ footer .copyright {
     top: auto;
     display: none;
   }
-  /* line 442, main.scss */
+  /* line 499, main.scss */
   header .sub-menu li {
     display: block;
     margin: 5px 0;
@@ -441,23 +500,23 @@ footer .copyright {
     height: auto;
     border-bottom: 0;
   }
-  /* line 451, main.scss */
+  /* line 508, main.scss */
   header .sub-menu-hover {
     top: 0;
   }
-  /* line 455, main.scss */
+  /* line 512, main.scss */
   header .sub-menu-clicked {
     display: block;
   }
-  /* line 459, main.scss */
+  /* line 516, main.scss */
   header .sub-menu-button-clicked {
     color: white;
   }
-  /* line 463, main.scss */
+  /* line 520, main.scss */
   header .social-icons {
     display: none;
   }
-  /* line 467, main.scss */
+  /* line 524, main.scss */
   header .menu-button {
     float: right;
     line-height: 80px;
@@ -466,7 +525,7 @@ footer .copyright {
     transition: color .3s;
     -webkit-transition: color .3s;
   }
-  /* line 475, main.scss */
+  /* line 532, main.scss */
   header .menu-button svg {
     fill: white;
     transition: fill .3s;
@@ -475,29 +534,34 @@ footer .copyright {
     margin-left: 10px;
     margin-top: -2px;
   }
-  /* line 485, main.scss */
+  /* line 542, main.scss */
   header .menu-button:hover {
     color: white;
   }
-  /* line 488, main.scss */
+  /* line 545, main.scss */
   header .menu-button:hover svg {
     fill: white;
   }
 
-  /* line 496, main.scss */
+  /* line 553, main.scss */
   .col-3 {
     width: 100%;
   }
 
-  /* line 500, main.scss */
-  footer {
-    margin: 40px 0;
+  /* line 557, main.scss */
+  #blog-posts {
+    padding: 40px 0 60px 0;
   }
-  /* line 503, main.scss */
+
+  /* line 561, main.scss */
+  footer {
+    margin: 40px 0 40px;
+  }
+  /* line 564, main.scss */
   footer .col-3 {
     padding: 0;
   }
-  /* line 507, main.scss */
+  /* line 568, main.scss */
   footer .copyright {
     margin-top: 40px;
   }
@@ -508,7 +572,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers
  */
-/* line 527, main.scss */
+/* line 585, main.scss */
 .hidden {
   display: none !important;
 }
@@ -517,7 +581,7 @@ footer .copyright {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 536, main.scss */
+/* line 594, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -534,7 +598,7 @@ footer .copyright {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 554, main.scss */
+/* line 612, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -548,7 +612,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 567, main.scss */
+/* line 625, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -564,7 +628,7 @@ footer .copyright {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 584, main.scss */
+/* line 642, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -573,7 +637,7 @@ footer .copyright {
   /* 2 */
 }
 
-/* line 589, main.scss */
+/* line 647, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -595,7 +659,7 @@ footer .copyright {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 621, main.scss */
+  /* line 679, main.scss */
   *,
   *:before,
   *:after,
@@ -609,18 +673,18 @@ footer .copyright {
     text-shadow: none !important;
   }
 
-  /* line 630, main.scss */
+  /* line 688, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 634, main.scss */
+  /* line 692, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 638, main.scss */
+  /* line 696, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -629,13 +693,13 @@ footer .copyright {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 648, main.scss */
+  /* line 706, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 653, main.scss */
+  /* line 711, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -646,23 +710,23 @@ footer .copyright {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 663, main.scss */
+  /* line 721, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 668, main.scss */
+  /* line 726, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 672, main.scss */
+  /* line 730, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 678, main.scss */
+  /* line 736, main.scss */
   p,
   h2,
   h3 {
@@ -670,7 +734,7 @@ footer .copyright {
     widows: 3;
   }
 
-  /* line 684, main.scss */
+  /* line 742, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
