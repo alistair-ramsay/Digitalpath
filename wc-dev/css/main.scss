@@ -238,6 +238,7 @@ header {
 	position: relative;
 	text-align: center;
 	height: 60px;
+	z-index: 3;
 		
 	menu {
 		margin-top: -20px;
@@ -328,10 +329,6 @@ li {
 	padding: 20px;
 }
 
-.column-1 {
-	max-width: 1200px;
-}
-
 body {
 	font-family: "proxima-nova", sans-serif;
 	font-style: normal;
@@ -358,9 +355,179 @@ li {
 	max-width: 1200px;
 	text-align: left;
 	margin: 0 auto;
+	
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	li {
+		margin: 0 0 0 0;
+		padding: 0;
+	}
 }
 
-.col-3 {
+#hero-image {
+	background: $white;
+	height: 550px;
+	float: left;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	
+	img {
+		height: 95%;
+		position: absolute;
+		bottom: 0;
+		right: 2%;
+	}
+	
+	.windmill-wrapper {
+		width: 60%;
+		position: absolute;
+		z-index: 2;
+	}
+	
+	.windmill-logo-container {
+		width: 540px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	.windmill-sail-container {
+		position: relative;
+			
+	}
+	
+	.windmill-sail {
+		position: absolute;
+		width: 120.5px;
+		height: 120px;
+		top: 19px;
+		left: 60px;
+		animation-name: spin;
+	    animation-duration: 8000ms;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;    
+	}
+	
+	.windmill-logo {
+		width: 100%;
+		margin-top: 100px;
+		margin-bottom: 40px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	.col-50 {
+		position: relative;
+	}
+	
+	
+		
+	h1 {
+		float: none;
+		text-align: center;
+		width: 540px;
+		margin: 0 auto;
+	}
+		
+	h1:before {
+		display: none;
+		height: 0;
+		width: 0;
+	}
+		
+	h1:after {
+		display: none;
+		height: 0;
+		width: 0;
+	}
+	
+	
+	.col-50.left {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 200px;
+	}
+	
+	.col-50.right {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: 200px;
+	}
+	
+	#hero-shape-left {
+		background: $brand-col-red;
+		width: 130%;
+		height: 250px;
+		-webkit-transform: rotate(6deg);
+		-ms-transform: rotate(6deg);
+	    transform: rotate(6deg);
+	    -webkit-transform-origin: 100% 100%;
+	    margin-top: 200px;
+	    float: right;
+	    
+	}
+	
+	#hero-shape-right {
+		background: $brand-col-red;
+		width: 130%;
+		height: 250px;
+		-webkit-transform: rotate(-6deg);
+		-ms-transform: rotate(-6deg);
+	    transform: rotate(-6deg);
+	    -webkit-transform-origin: 0% 100%;
+	    margin-top: 200px;
+	    float: left;
+	}
+
+}
+
+#hero-copy {
+	background: $brand-col-red;
+	color: $white;
+	min-height: 300px;
+	float: left;
+	width: 100%;
+	
+	p, li {
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	
+	li:before {
+		content: "";
+		height: 0.9em;
+		width: 0.9em;
+		margin-left: -1.5em;
+		margin-top: 0.4em;
+		line-height: 1.9em;
+		display: block;
+		float: left;
+		background: no-repeat url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.6 17.2'><style type='text/css'>.st0{fill:#fff;}</style><polygon class='st0' points='0 7.9 6.4 17.2 16.6 0 5.9 12 '/></svg>");
+	}
+	
+	.hero-copy-padding-left {
+		padding: 80px 60px;
+		width: 55%;
+		float: right;
+	}
+	
+	.hero-copy-padding-right {
+		padding: 80px 60px;
+		width: 55%;
+		float: left;
+	}
+}
+
+.col-33 {
 	width: 33.333%;
 	float: left;
 	display: inline;
@@ -376,7 +543,7 @@ li {
 		content: "";
 		display: block;
 		height: 30px;
-		width: 38%;
+		width: 33%;
 		position: absolute;
 		bottom: -10px;
 		left: 20px;
@@ -389,7 +556,7 @@ li {
 		content: "";
 		display: block;
 		height: 30px;
-		width: 38%;
+		width: 33%;
 		float: right;
 		position: absolute;
 		bottom: -10px;
@@ -403,18 +570,24 @@ li {
 		content: "";
 		display: block;
 		height: 30px;
-		width: 38%;
+		width: 33%;
 		float: right;
 		position: absolute;
 		bottom: -10px;
-		left: 31.1%;
+		left: 33.4%;
 		opacity: 0.7;
 		filter: alpha(opacity=70); /* For IE8 and earlier */
 	}
 
 }
 
-.col-2 {
+.col-50 {
+	width: 50%;
+	float: left;
+	display: inline;
+}
+
+.col-66 {
 	width: 66.666%;
 	float: left;
 	display: inline;
@@ -446,6 +619,7 @@ li {
 }
 
 footer {
+	margin: 20px 0;
 	
 	.col-3 {
 		padding: 20px 0 20px;
@@ -507,6 +681,14 @@ footer {
 }
 
 
+@keyframes spin {
+	from {
+	    transform:rotate(0deg);
+	}
+	to {
+	    transform:rotate(360deg);
+	}
+}
 
 
 
@@ -514,6 +696,65 @@ footer {
    Media Queries
    ============================= */
 
+
+
+
+	
+
+@media only screen and (max-width: 1080px) {
+	
+	#hero-image .windmill-logo-container {
+	    width: 440px;
+	}
+	
+	#hero-image h1 {
+		width: 440px;
+	}
+	
+	#hero-image .windmill-sail {
+	    width: 120.5px;
+	    height: 120px;
+	    top: 19px;
+	    left: 37px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	
+	#hero-image .windmill-logo-container {
+	    width: 340px;
+	}
+	
+	#hero-image h1 {
+		width: 440px;
+	}
+	
+	#hero-image img {
+    	right: -8%;
+    }
+    
+    #hero-image .windmill-sail {
+	    width: 81.5px;
+	    height: 81px;
+	    top: 46px;
+	}
+}
+
+@media only screen and (max-width: 880px) {
+	
+	#hero-image .windmill-logo-container {
+	    width: 340px;
+	}
+	
+	#hero-image h1 {
+		width: 440px;
+	}
+	
+	#hero-image img {
+    	height: 80%;
+    	right: -14%;
+    }
+}
 
 /* -----------------------------
    Mobile
@@ -544,6 +785,7 @@ footer {
 			position: absolute;
 			background: $brand-col-black;
 			width: 100%;
+			z-index: 1;
 		}
 		
 		ul {
@@ -651,18 +893,111 @@ footer {
 		
 	}
 	
-	.col-3, .col-2 {
+	.col-33, .col-66, .col-50 {
 	    width: 100%;
+	}
+	
+	.col-33 {
+		
+		.border-left {
+			left: 0;
+			width: 38%;
+		}
+	
+		.border-right {
+			right: 0;
+			width: 38%;
+		}
+	
+		.border-centre {
+			width: 38%;
+			left: 30.8%;
+		}
+		
+		img {
+	    	margin-top: 0;
+	    }
+	}
+	
+	#hero-copy .hero-copy-padding-left {
+	    padding: 60px 20px 40px;
+	    width: auto;
+	    float: left;
+	}
+	
+	#hero-copy .hero-copy-padding-right {
+	    padding: 0 20px 60px 55px;
+	    width: auto;
+	    float: left;
+	}
+
+	#hero-image {
+		height: auto;
+		
+		.windmill-wrapper {
+		    width: 100%;
+		    position: relative;
+		    z-index: 2;
+		    margin-top: 40px;
+		}
+
+		.windmill-logo-container {
+		    width: 100%;
+		}
+		
+		h1 {
+			width: 100%;
+			text-align: left;
+		}
+		
+		img {
+		    height: auto;
+		    width: 78%;
+		    position: relative;
+		}
+		
+		.windmill-sail {
+		    width: 63%;
+		    top: 47px;
+		    height: -3%;
+		    left: -9%;
+		}
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#hero-image 	
+	.mob-img-padding {
+		padding: 20px 0;
 	}
 	
 	#blog-posts {
 		padding: 40px 0 60px 0;
+		
+		.blog-promo-header {
+			margin: 20px 20px 0;
+		}
+		
+		h2 {
+			margin: 20px 0 0;
+		}
 	}
 	
 	footer {
-		margin: 40px 0 40px;
+		margin: 40px 0;
 		
-		.col-3 {
+		.col-33 {
 			padding: 0;
 		}
 		
@@ -844,3 +1179,4 @@ footer {
         page-break-after: avoid;
     }
 }
+
