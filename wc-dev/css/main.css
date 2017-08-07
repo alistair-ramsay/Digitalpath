@@ -511,7 +511,7 @@ li {
   line-height: 1.9em;
   display: block;
   float: left;
-  background: no-repeat url("data:image/svg+xml;charset=utf8,&3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.6 17.2'&3E&3Cstyle type='text/css'&3E.st0{fill:#fff;}&3C/style&3E&3Cpolygon class='st0' points='0 7.9 6.4 17.2 16.6 0 5.9 12 '/&3E&3C/svg&3E");
+  background-image: url("data:image/svg+xml;charset=utf8,&3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16.6 17.2'&3E&3Cstyle type='text/css'&3E.st0{fill:white;}&3C/style&3E&3Cpolygon class='st0' points='0 7.9 6.4 17.2 16.6 0 5.9 12 '/&3E&3C/svg&3E") no-repeat;
 }
 /* line 517, main.scss */
 #hero-copy .hero-copy-padding-left {
