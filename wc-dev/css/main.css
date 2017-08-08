@@ -950,7 +950,7 @@ footer .copyright {
     width: 100%;
     position: relative;
     z-index: 2;
-    margin-top: 20px;
+    margin-top: 0;
   }
   /* line 955, main.scss */
   #hero-image .windmill-logo-container {
