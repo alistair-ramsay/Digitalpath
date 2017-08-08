@@ -960,15 +960,16 @@ footer .copyright {
   #hero-image h1 {
     width: 100%;
     text-align: left;
+    margin-top: -20px;
   }
-  /* line 964, main.scss */
+  /* line 965, main.scss */
   #hero-image img {
     height: auto;
     width: 78%;
     position: relative;
-    margin-top: -40px;
+    margin-top: -20px;
   }
-  /* line 971, main.scss */
+  /* line 972, main.scss */
   #hero-image .windmill-sail {
     width: 63%;
     top: 47px;
@@ -976,34 +977,34 @@ footer .copyright {
     left: -9%;
   }
 
-  /* line 993, main.scss */
+  /* line 994, main.scss */
   #hero-image
   .mob-img-padding {
     padding: 20px 0;
   }
 
-  /* line 997, main.scss */
+  /* line 998, main.scss */
   #blog-posts {
     padding: 40px 0 60px 0;
   }
-  /* line 1000, main.scss */
+  /* line 1001, main.scss */
   #blog-posts .blog-promo-header {
     margin: 20px 20px 0;
   }
-  /* line 1004, main.scss */
+  /* line 1005, main.scss */
   #blog-posts h2 {
     margin: 20px 0 0;
   }
 
-  /* line 1009, main.scss */
+  /* line 1010, main.scss */
   footer {
     margin: 40px 0;
   }
-  /* line 1012, main.scss */
+  /* line 1013, main.scss */
   footer .col-33 {
     padding: 0;
   }
-  /* line 1016, main.scss */
+  /* line 1017, main.scss */
   footer .copyright {
     margin-top: 40px;
   }
@@ -1014,7 +1015,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers
  */
-/* line 1033, main.scss */
+/* line 1034, main.scss */
 .hidden {
   display: none !important;
 }
@@ -1023,7 +1024,7 @@ footer .copyright {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 1042, main.scss */
+/* line 1043, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1040,7 +1041,7 @@ footer .copyright {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 1060, main.scss */
+/* line 1061, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1054,7 +1055,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 1073, main.scss */
+/* line 1074, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1070,7 +1071,7 @@ footer .copyright {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1090, main.scss */
+/* line 1091, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1079,7 +1080,7 @@ footer .copyright {
   /* 2 */
 }
 
-/* line 1095, main.scss */
+/* line 1096, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1101,7 +1102,7 @@ footer .copyright {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 1127, main.scss */
+  /* line 1128, main.scss */
   *,
   *:before,
   *:after,
@@ -1115,18 +1116,18 @@ footer .copyright {
     text-shadow: none !important;
   }
 
-  /* line 1136, main.scss */
+  /* line 1137, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1140, main.scss */
+  /* line 1141, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1144, main.scss */
+  /* line 1145, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1135,13 +1136,13 @@ footer .copyright {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 1154, main.scss */
+  /* line 1155, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 1159, main.scss */
+  /* line 1160, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -1152,23 +1153,23 @@ footer .copyright {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 1169, main.scss */
+  /* line 1170, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 1174, main.scss */
+  /* line 1175, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1178, main.scss */
+  /* line 1179, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 1184, main.scss */
+  /* line 1185, main.scss */
   p,
   h2,
   h3 {
@@ -1176,7 +1177,7 @@ footer .copyright {
     widows: 3;
   }
 
-  /* line 1190, main.scss */
+  /* line 1191, main.scss */
   h2,
   h3 {
     page-break-after: avoid;
