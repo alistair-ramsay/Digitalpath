@@ -402,7 +402,7 @@ li {
 #hero-image .windmill-logo-container {
   width: 540px;
   text-align: center;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 /* line 397, main.scss */
 #hero-image .windmill-sail-container {
@@ -760,27 +760,37 @@ footer .copyright {
    Mobile
    ----------------------------- */
 @media only screen and (max-width: 680px) {
-  /* line 765, main.scss */
+  /* line 768, main.scss */
+  body {
+    font-size: 140%;
+  }
+
+  /* line 772, main.scss */
+  h1, h2 {
+    font-size: 135%;
+  }
+
+  /* line 776, main.scss */
   .desktop-hide {
     display: block;
   }
 
-  /* line 769, main.scss */
+  /* line 780, main.scss */
   .mobile-hide {
     display: none;
   }
 
-  /* line 773, main.scss */
+  /* line 784, main.scss */
   header {
     position: relative;
     text-align: center;
     height: 60px;
   }
-  /* line 778, main.scss */
+  /* line 789, main.scss */
   header .padding {
     padding: 0;
   }
-  /* line 782, main.scss */
+  /* line 793, main.scss */
   header menu {
     margin: 60px 0 0;
     padding: 0 0 30px;
@@ -789,13 +799,13 @@ footer .copyright {
     width: 100%;
     z-index: 1;
   }
-  /* line 791, main.scss */
+  /* line 802, main.scss */
   header ul {
     margin: 0;
     padding: 0;
     height: auto;
   }
-  /* line 797, main.scss */
+  /* line 808, main.scss */
   header li {
     display: block;
     margin-right: 0;
@@ -804,19 +814,19 @@ footer .copyright {
     border-bottom: 0px solid;
     padding: 5px 0;
   }
-  /* line 806, main.scss */
+  /* line 817, main.scss */
   header li.active a {
     color: #d3d930;
   }
-  /* line 810, main.scss */
+  /* line 821, main.scss */
   header .sub-menu-parent {
     position: relative;
   }
-  /* line 813, main.scss */
+  /* line 824, main.scss */
   header .sub-menu-parent li {
     background: #681c47;
   }
-  /* line 818, main.scss */
+  /* line 829, main.scss */
   header .sub-menu-container {
     position: relative;
     width: auto;
@@ -825,12 +835,12 @@ footer .copyright {
     left: auto;
     top: auto;
   }
-  /* line 827, main.scss */
+  /* line 838, main.scss */
   header .sub-menu-button {
     height: auto;
     border-bottom: 0px solid #a38686;
   }
-  /* line 832, main.scss */
+  /* line 843, main.scss */
   header .sub-menu {
     background: #460d2d;
     text-align: center;
@@ -841,7 +851,7 @@ footer .copyright {
     top: auto;
     display: none;
   }
-  /* line 842, main.scss */
+  /* line 853, main.scss */
   header .sub-menu li {
     display: block;
     margin: 5px 0;
@@ -849,23 +859,23 @@ footer .copyright {
     height: auto;
     border-bottom: 0;
   }
-  /* line 851, main.scss */
+  /* line 862, main.scss */
   header .sub-menu-hover {
     top: 0;
   }
-  /* line 855, main.scss */
+  /* line 866, main.scss */
   header .sub-menu-clicked {
     display: block;
   }
-  /* line 859, main.scss */
+  /* line 870, main.scss */
   header .sub-menu-button-clicked {
     color: white;
   }
-  /* line 863, main.scss */
+  /* line 874, main.scss */
   header .social-icons {
     display: none;
   }
-  /* line 867, main.scss */
+  /* line 878, main.scss */
   header .menu-button {
     float: right;
     line-height: 60px;
@@ -874,7 +884,7 @@ footer .copyright {
     transition: color .3s;
     -webkit-transition: color .3s;
   }
-  /* line 875, main.scss */
+  /* line 886, main.scss */
   header .menu-button svg {
     fill: white;
     transition: fill .3s;
@@ -883,81 +893,81 @@ footer .copyright {
     margin-left: 10px;
     margin-top: -2px;
   }
-  /* line 885, main.scss */
+  /* line 896, main.scss */
   header .menu-button:hover {
     color: white;
   }
-  /* line 888, main.scss */
+  /* line 899, main.scss */
   header .menu-button:hover svg {
     fill: white;
   }
 
-  /* line 896, main.scss */
+  /* line 907, main.scss */
   .col-33, .col-66, .col-50 {
     width: 100%;
   }
 
-  /* line 902, main.scss */
+  /* line 913, main.scss */
   .col-33 .border-left {
     left: 0;
     width: 38%;
   }
-  /* line 907, main.scss */
+  /* line 918, main.scss */
   .col-33 .border-right {
     right: 0;
     width: 38%;
   }
-  /* line 912, main.scss */
+  /* line 923, main.scss */
   .col-33 .border-centre {
     width: 38%;
     left: 30.8%;
   }
-  /* line 917, main.scss */
+  /* line 928, main.scss */
   .col-33 img {
     margin-top: 0;
   }
 
-  /* line 922, main.scss */
+  /* line 933, main.scss */
   #hero-copy .hero-copy-padding-left {
     padding: 60px 20px 40px;
     width: auto;
     float: left;
   }
 
-  /* line 928, main.scss */
+  /* line 939, main.scss */
   #hero-copy .hero-copy-padding-right {
     padding: 0 20px 60px 55px;
     width: auto;
     float: left;
   }
 
-  /* line 934, main.scss */
+  /* line 945, main.scss */
   #hero-image {
     height: auto;
   }
-  /* line 937, main.scss */
+  /* line 948, main.scss */
   #hero-image .windmill-wrapper {
     width: 100%;
     position: relative;
     z-index: 2;
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  /* line 944, main.scss */
+  /* line 955, main.scss */
   #hero-image .windmill-logo-container {
     width: 100%;
   }
-  /* line 948, main.scss */
+  /* line 959, main.scss */
   #hero-image h1 {
     width: 100%;
     text-align: left;
   }
-  /* line 953, main.scss */
+  /* line 964, main.scss */
   #hero-image img {
     height: auto;
     width: 78%;
     position: relative;
   }
-  /* line 959, main.scss */
+  /* line 970, main.scss */
   #hero-image .windmill-sail {
     width: 63%;
     top: 47px;
@@ -965,34 +975,34 @@ footer .copyright {
     left: -9%;
   }
 
-  /* line 981, main.scss */
+  /* line 992, main.scss */
   #hero-image
   .mob-img-padding {
     padding: 20px 0;
   }
 
-  /* line 985, main.scss */
+  /* line 996, main.scss */
   #blog-posts {
     padding: 40px 0 60px 0;
   }
-  /* line 988, main.scss */
+  /* line 999, main.scss */
   #blog-posts .blog-promo-header {
     margin: 20px 20px 0;
   }
-  /* line 992, main.scss */
+  /* line 1003, main.scss */
   #blog-posts h2 {
     margin: 20px 0 0;
   }
 
-  /* line 997, main.scss */
+  /* line 1008, main.scss */
   footer {
     margin: 40px 0;
   }
-  /* line 1000, main.scss */
+  /* line 1011, main.scss */
   footer .col-33 {
     padding: 0;
   }
-  /* line 1004, main.scss */
+  /* line 1015, main.scss */
   footer .copyright {
     margin-top: 40px;
   }
@@ -1003,7 +1013,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers
  */
-/* line 1021, main.scss */
+/* line 1032, main.scss */
 .hidden {
   display: none !important;
 }
@@ -1012,7 +1022,7 @@ footer .copyright {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 1030, main.scss */
+/* line 1041, main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1029,7 +1039,7 @@ footer .copyright {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 1048, main.scss */
+/* line 1059, main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -1043,7 +1053,7 @@ footer .copyright {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 1061, main.scss */
+/* line 1072, main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -1059,7 +1069,7 @@ footer .copyright {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 1078, main.scss */
+/* line 1089, main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -1068,7 +1078,7 @@ footer .copyright {
   /* 2 */
 }
 
-/* line 1083, main.scss */
+/* line 1094, main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -1090,7 +1100,7 @@ footer .copyright {
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 1115, main.scss */
+  /* line 1126, main.scss */
   *,
   *:before,
   *:after,
@@ -1104,18 +1114,18 @@ footer .copyright {
     text-shadow: none !important;
   }
 
-  /* line 1124, main.scss */
+  /* line 1135, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 1128, main.scss */
+  /* line 1139, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 1132, main.scss */
+  /* line 1143, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -1124,13 +1134,13 @@ footer .copyright {
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  /* line 1142, main.scss */
+  /* line 1153, main.scss */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
 
-  /* line 1147, main.scss */
+  /* line 1158, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -1141,23 +1151,23 @@ footer .copyright {
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  /* line 1157, main.scss */
+  /* line 1168, main.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 1162, main.scss */
+  /* line 1173, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 1166, main.scss */
+  /* line 1177, main.scss */
   img {
     max-width: 100% !important;
   }
 
-  /* line 1172, main.scss */
+  /* line 1183, main.scss */
   p,
   h2,
   h3 {
@@ -1165,7 +1175,7 @@ footer .copyright {
     widows: 3;
   }
 
-  /* line 1178, main.scss */
+  /* line 1189, main.scss */
   h2,
   h3 {
     page-break-after: avoid;

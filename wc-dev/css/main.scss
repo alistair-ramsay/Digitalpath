@@ -391,7 +391,7 @@ li {
 	.windmill-logo-container {
 		width: 540px;
 		text-align: center;
-		margin: 0 auto;
+		margin: 15px auto 0;
 	}
 	
 	.windmill-sail-container {
@@ -762,6 +762,17 @@ footer {
 
 @media only screen and (max-width: 680px) {
 	
+	
+	
+	
+	body {
+		font-size: 140%;
+	}
+	
+	h1, h2 {
+		font-size: 135%;
+	}
+	
 	.desktop-hide {
 		display: block;
 	}
@@ -938,7 +949,7 @@ footer {
 		    width: 100%;
 		    position: relative;
 		    z-index: 2;
-		    margin-top: 40px;
+		    margin-top: 20px;
 		}
 
 		.windmill-logo-container {
