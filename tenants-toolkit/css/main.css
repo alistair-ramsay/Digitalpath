@@ -396,6 +396,8 @@ header #menu-bg, header #menu-icon {
       min-height: 400px; }
   .home #main .hp-three img, .search #main .hp-three img {
     margin-left: -20px; }
+.home .search #main-content-wrapper, .search .search #main-content-wrapper {
+  padding: 0; }
 .home #main.search-results, .search #main.search-results {
   display: block; }
   .home #main.search-results .padding, .search #main.search-results .padding {
