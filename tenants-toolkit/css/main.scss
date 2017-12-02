@@ -1090,6 +1090,7 @@ footer {
 		#main-content-wrapper {
 			height: auto;
 			display: block;
+			padding: 40px 0;
 		}
 	
 		#main {
@@ -1114,10 +1115,20 @@ footer {
 			
 			.hp-one {
 				width: 100%;
+				
+				h1 {
+					margin: 0;
+				}
+				
+				img {
+					width: 100%;
+					margin-left: 0;
+				}
 			}
 			
 			.hp-two, .hp-three {
 				width: 100%;
+				height: auto;
 								
 				.home-links {
 					right: $padding;
@@ -1126,6 +1137,10 @@ footer {
 				.padding {
 					margin-right: 0;
 					min-height: inherit;
+				}
+				
+				h2 {
+					margin-top: $padding;
 				}
 			}
 		}

@@ -727,7 +727,8 @@ footer {
     height: auto; }
   .home #main-content-wrapper, .search #main-content-wrapper {
     height: auto;
-    display: block; }
+    display: block;
+    padding: 40px 0; }
   .home #main, .search #main {
     margin-left: 0;
     height: auto;
@@ -743,13 +744,21 @@ footer {
       margin-right: 0; }
     .home #main .hp-one, .search #main .hp-one {
       width: 100%; }
+      .home #main .hp-one h1, .search #main .hp-one h1 {
+        margin: 0; }
+      .home #main .hp-one img, .search #main .hp-one img {
+        width: 100%;
+        margin-left: 0; }
     .home #main .hp-two, .home #main .hp-three, .search #main .hp-two, .search #main .hp-three {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
       .home #main .hp-two .home-links, .home #main .hp-three .home-links, .search #main .hp-two .home-links, .search #main .hp-three .home-links {
         right: 20px; }
       .home #main .hp-two .padding, .home #main .hp-three .padding, .search #main .hp-two .padding, .search #main .hp-three .padding {
         margin-right: 0;
-        min-height: inherit; } }
+        min-height: inherit; }
+      .home #main .hp-two h2, .home #main .hp-three h2, .search #main .hp-two h2, .search #main .hp-three h2 {
+        margin-top: 20px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
