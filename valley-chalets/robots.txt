@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /privacy.html
+Disallow: /tsandcs.html
+Sitemap: http://valleychalets.com/sitemap.xml
