@@ -58,11 +58,26 @@
 	padding-bottom: 10px;
 }
 
+.property-copy h2 {
+	color: #4a4a4a;
+    font-family: "calluna", serif;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 1.4em;
+}
+
 .properties-list .intro {
 	padding-bottom: 10px;
 }
 
+.property-sublist {
+	margin-left: 36px;
+	
+}
 
+.property-sublist a {
+
+}
 
 
 
