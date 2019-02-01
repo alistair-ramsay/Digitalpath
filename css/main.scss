@@ -120,10 +120,6 @@ textarea {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo:before {
-	content: "\e600";
-}
-
 .icon-info:before {
 	content: "\e601";
 }
@@ -754,21 +750,19 @@ nav {
 }
 
 .light .large-logo {
-	font-size: 780%;
-	color: $dark;
-	margin-left: -0.05em;
-	margin-top: -0.15em;
-	float: left;
-	display: inline;
+	fill: $dark;
+	margin-bottom: 5px;
+	transition: fill .4s linear;
 }
 
 .dark .large-logo {
-	font-size: 780%;
-	color: $light;
-	margin-left: -0.05em;
-	margin-top: -0.15em;
-	float: left;
-	display: inline;
+	fill: $light;
+	margin-bottom: 5px;
+	transition: fill .4s linear;	
+}
+
+.dark .large-logo:hover, .light .large-logo:hover {
+	fill: $hover;
 }
 
 #logo-text {
