@@ -749,6 +749,12 @@ nav {
 	display: inline;
 }
 
+.large-logo {
+	width: 80px;
+	float: left;
+    clear: both;
+}
+
 .light .large-logo {
 	fill: $dark;
 	margin-bottom: 5px;
